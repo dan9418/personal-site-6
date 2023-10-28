@@ -1,3 +1,4 @@
+import PageHeader from "@/components/PageHeader";
 import React, { ReactNode } from "react";
 import { RESUME, Resume, TechSkillsItem, WorkExpItem } from './resume.data';
 
@@ -55,8 +56,8 @@ const WorkExp: React.FC<{ data: Resume['workExp'][number] }> = ({ data }) => {
 
 const ResumePage = () => {
     return (
-        <div className="p-16">
-            <h1 className="text-4xl font-black text-center">Resume</h1>
+        <>
+            <PageHeader text='Resume' />
 
             <section>
                 <SectionHeader title="Technical Skills" />
@@ -79,7 +80,7 @@ const ResumePage = () => {
                 <SectionHeader title="Projects" />
                 <List items={RESUME.projects} />
             </section>
-        </div>
+        </>
     )
 }
 
