@@ -1,12 +1,12 @@
 import React, { ReactNode } from "react";
-import { TECH_SKILLS, TechSkills } from './resume.data';
+import { TECH_SKILLS, TechSkills, WORK_EXP, WorkExp } from './resume.data';
 
-const ResumeSubheader: React.FC<any> = ({ company, date, position, location }) => {
+const ResumeSubheader: React.FC<Omit<WorkExp[number], 'items'>> = ({ company, duration, position, location }) => {
     return (
         <div className="resume-subheader">
             <h3 className="flex justify-between text-xl font-bold">
                 <span className="company">{company}</span>
-                <span className="date">{date}</span>
+                <span className="date">{duration}</span>
             </h3>
             <h4 className="flex justify-between text-l italic">
                 <span className="position">{position}</span>
@@ -24,10 +24,24 @@ const List: React.FC<{ items: ReactNode[] }> = ({ items }) => {
     );
 };
 
-const SectionList: React.FC<{ data: TechSkills[number] }> = ({ data }) => {
+const TechSkill: React.FC<{ data: TechSkills[number] }> = ({ data }) => {
     return (
         <div>
             <h3 className="text-xl font-bold">{data.category}</h3>
+            <List items={data.items} />
+        </div>
+    );
+};
+
+const WorkExp: React.FC<{ data: WorkExp[number] }> = ({ data }) => {
+    return (
+        <div className="mt-4">
+            <ResumeSubheader
+                company={data.company}
+                position={data.position}
+                duration={data.duration}
+                location={data.location}
+            />
             <List items={data.items} />
         </div>
     );
@@ -37,80 +51,24 @@ const ResumePage = () => {
     return (
         <>
             <section>
-                <h2 className="text-2xl font-bold">Technical Skills</h2>
+                <h2 className="text-2xl font-bold mt-8">Technical Skills</h2>
                 <div className='skills grid grid-cols-4'>
-                    {TECH_SKILLS.map(skill => <SectionList key={skill.category} data={skill} />)}
+                    {TECH_SKILLS.map(skill => <TechSkill key={skill.category} data={skill} />)}
                 </div>
             </section>
 
             <section className="experience">
-                <h2 className="text-2xl font-bold">Work Experience</h2>
-
-                <ResumeSubheader
-                    company='CBS Sports Digital'
-                    position='Senior Software Engineer'
-                    date='Dec 2019 - Present'
-                    location='El Dorado Hills, CA (Remote)'
-                />
-
-                <ul className="list-disc ml-4">
-                    <li>Serving as the primary frontend engineer in effort to modularize and modernize the <a href='https://www.maxpreps.com/' target='_blank'>MaxPreps</a> architecture</li>
-                    <li>Implementing new React pages utilizing Next.js for server-side rendering and SEO optimization</li>
-                    <li>Building out robust, responsive component library using styled-components</li>
-                    <li>Architecting patterns for ad, tracking, and edge-caching implementations</li>
-                    <li>Managing complex, multi-layer routing requirements and URL-rewriting patterns</li>
-                    <li>Working directly with stakeholders across product, design, and engineering in a highly collaborative Agile environment</li>
-                </ul>
-
-                <ResumeSubheader
-                    company='Bentley Systems'
-                    position='Associate Software Engineer'
-                    date='May 2016 - Jul 2019'
-                    location='Pittsburgh, PA + Vilnius, LT'
-                />
-
-                <ul className="list-disc ml-4">
-                    <li>Designed, implemented, and consumed various RESTful APIs</li>
-                    <li>Built responsive web applications using TypeScript, Angular, HTML5, and CSS3</li>
-                    <li>Authored backend services for scalability, flexibility, and modularity using .NET framework</li>
-                    <li>Integrated relational and NoSQL databases into web applications</li>
-                    <li>Worked with Azure cloud applications utilizing Octopus for CI/CD pipelines</li>
-                </ul>
-
-                <ResumeSubheader
-                    company='The Bank of New York Mellon'
-                    position='Software Engineer Intern'
-                    date='May 2015 - Aug 2015'
-                    location='Pittsburgh, PA'
-                />
-
-                <ul className="list-disc ml-4">
-                    <li>Syncronized schemas across DB2 databases to form single, master schema</li>
-                    <li>Automated daily data comparisons for a central Reference Data Hub to simplify internal data sharing</li>
-                    <li>Wrote Java application to integrate disparate datasources on a partitioned MVS/Linux mainframe</li>
-                </ul>
-
-                <ResumeSubheader
-                    company='University of Pittsburgh, Residence Life'
-                    position='Resident Assistant'
-                    date='Aug 2014 - Dec 2015'
-                    location='Pittsburgh, PA'
-                />
-
-                <ul className="list-disc ml-4">
-                    <li>Managed and mentored 57 freshmen engineering residents</li>
-                    <li>Enforced community standards for diverse pool of students</li>
-                    <li>Organized large-scale social, educational, and experiential programs</li>
-                </ul>
+                <h2 className="text-2xl font-bold mt-8">Work Experience</h2>
+                {WORK_EXP.map(exp => <WorkExp key={exp.company} data={exp} />)}
             </section>
 
             <section>
-                <h2 className="text-2xl font-bold">Education</h2>
+                <h2 className="text-2xl font-bold mt-8">Education</h2>
 
                 <ResumeSubheader
                     company='University of Pittsburgh, Swanson School of Engineering'
                     position='BS, Computer Engineering'
-                    date='Apr 2017'
+                    duration='Apr 2017'
                     location='Pittsburgh, PA'
                 />
 
