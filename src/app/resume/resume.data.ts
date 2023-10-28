@@ -1,11 +1,11 @@
 // TECHNICAL SKILLS
 
-export type TechSkills = {
+export type TechSkillsItem = {
     category: string;
     items: string[];
-}[];
+};
 
-export const TECH_SKILLS: TechSkills = [
+const TECH_SKILLS: TechSkillsItem[] = [
     {
         category: 'Languages',
         items: [
@@ -64,17 +64,17 @@ export const TECH_SKILLS: TechSkills = [
     }
 ]
 
-export type WorkExp = {
+// WORK EXPERIENCE
+
+export type WorkExpItem = {
     company: string;
     duration: string;
     position: string;
     location: string;
     items: string[];
-}[];
+};
 
-// WORK EXPERIENCE
-
-export const WORK_EXP: WorkExp = [
+const WORK_EXP: WorkExpItem[] = [
     {
         company: 'CBS Sports, MaxPreps',
         duration: 'December 2019 - Present',
@@ -118,33 +118,38 @@ export const WORK_EXP: WorkExp = [
 
 // EDUCATION
 
-export type Education = {
-    school: string;
-    year: string;
-    degree: string;
-    gpa: string;
-}
-
-export const EDUCATION: Education = {
-    school: 'University of Pittsburgh, Swanson School of Engineering',
-    year: 'April 2017',
-    degree: 'BS, Computer Engineering',
-    gpa: '3.71 GPA'
+const EDUCATION: WorkExpItem = {
+    company: 'University of Pittsburgh, Swanson School of Engineering',
+    duration: 'April 2017',
+    position: 'BS, Computer Engineering',
+    location: '3.71 GPA',
+    items: [
+        'Graduated with special distinction as the Outstanding Senior in departmental class',
+        '2nd place at departmental design expo for augmented reality Android app (2017)',
+        '1st place for computer engineering conference paper on hybrid drives (2014)',
+    ]
 }
 
 // PROJECTS
 
 export const PROJECTS: string[] = [
     'Created Play What, an educational music theory website and toolkit (in Beta)',
-    'Developed a personal portfolio website using Gatsby',
+    'Developed a personal portfolio website using Next App Router and Tailwind CSS',
     'Volunteer program coordinator at nonprofit music instrument lending library',
-]
-
-// AWARDS
-
-export const AWARDS: string[] = [
-    'Graduated with special distinction as the Outstanding Senior in departmental class (2017)',
-    '2nd place at departmental design expo for augmented reality Android app (2017)',
-    '1st place for computer engineering conference paper on hybrid drives (2014)',
     'Eagle Scout (2009)',
 ]
+
+
+export type Resume = {
+    techSkills: TechSkillsItem[],
+    workExp: WorkExpItem[],
+    education: WorkExpItem,
+    projects: string[]
+}
+
+export const RESUME: Resume = {
+    techSkills: TECH_SKILLS,
+    workExp: WORK_EXP,
+    education: EDUCATION,
+    projects: PROJECTS
+}
