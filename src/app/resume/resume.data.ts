@@ -125,8 +125,8 @@ const EDUCATION: WorkExpItem = {
     location: '3.71 GPA',
     items: [
         'Graduated with special distinction as the Outstanding Senior in departmental class',
-        '2nd place at departmental design expo for augmented reality Android app (2017)',
-        '1st place for computer engineering conference paper on hybrid drives (2014)',
+        '2nd place at departmental design expo for augmented reality Android app',
+        '1st place for computer engineering conference paper on hybrid drives',
     ]
 }
 
@@ -136,7 +136,7 @@ export const PROJECTS: string[] = [
     'Created Play What, an educational music theory website and toolkit (in Beta)',
     'Developed a personal portfolio website using Next App Router and Tailwind CSS',
     'Volunteer program coordinator at nonprofit music instrument lending library',
-    'Eagle Scout (2009)',
+    'Eagle Scout',
 ]
 
 
