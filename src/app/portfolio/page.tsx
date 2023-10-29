@@ -1,3 +1,4 @@
+import React from 'react';
 import PageFrame from "@/components/PageFrame";
 import PortfolioPage from "./PortfolioPage";
 
