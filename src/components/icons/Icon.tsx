@@ -14,8 +14,12 @@ const Svg: React.FC<ISvgProps> = ({ className, size = 24, color = 'black', child
 
     const sizeProps = size ? { height: `${size}px`, width: `${size}px` } : {};
 
+    const style = {
+        fill: color
+    };
+
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" className={classes.join(' ')} {...sizeProps} {...rest}>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style={style} className={classes.join(' ')} {...sizeProps} {...rest}>
             {children}
         </svg>
     );
