@@ -281,7 +281,7 @@ const PortfolioPage = () => {
                 return (<>
                     <h2 className="text-lg">{name}</h2>
                     <p className="my-4">{description}</p>
-                    <ul className="grid grid-cols-3">
+                    <ul className="grid grid-cols-3 gap-4">
                         {images.map(img => (
                             <li key={img.path}>
                                 <Image src={img.path} alt={img.name} width={256} height={256}/>

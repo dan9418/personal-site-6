@@ -1,6 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import React, { ReactNode } from "react";
-import { RESUME, Resume, TechSkillsItem, WorkExpItem } from './resume.data';
+import { RESUME, Resume, TechSkillsItem, WorkExpItem } from '../../data/resume.data';
 
 const ResumeSubheader: React.FC<Omit<WorkExpItem, 'items'>> = ({ company, duration, position, location }) => {
     return (

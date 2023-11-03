@@ -1,16 +1,16 @@
 import PageFrame from "@/components/PageFrame";
-import ResumePage from "./ResumePage";
+import ContactPage from "./ContactPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Dan Bednarczyk | Technical Resume',
-    description: 'Software engineering resume',
+    title: 'Dan Bednarczyk | Contact',
+    description: 'Contact info',
   }
 
 export default function Home() {
     return (
         <PageFrame>
-            <ResumePage />
+            <ContactPage />
         </PageFrame>
     )
 }

@@ -2,7 +2,7 @@ import PageFrame from '@/components/PageFrame'
 import PageHeader from '@/components/PageHeader'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
-import headshot from '../img/headshot.jpg'
+import headshot from '/public/img/headshot.jpg'
 
 const Row: React.FC<{ imgSrc: StaticImageData, imgAlt: string, text: string, flip?: boolean, linkHref: string, linkText: string, title: string }> =
   ({ imgSrc, imgAlt, text, flip, linkHref, linkText, title }) => {
