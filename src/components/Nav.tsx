@@ -3,7 +3,8 @@
 import { NAV_LINKS } from "@/data/links.data"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import ICON, { IconId } from "./icons/icons"
+import Icon from "./icons/Icon"
+import { IconId } from "./icons/icons"
 
 const NavLink: React.FC<{ href: string, text: string, iconId: IconId }> = ({ href, text, iconId }) => {
     const pathname = usePathname();
@@ -12,11 +13,9 @@ const NavLink: React.FC<{ href: string, text: string, iconId: IconId }> = ({ hre
         className = `${className} border-white border-b-2`
     }
 
-    const Component = ICON[iconId];
-
     return (
         <Link href={href} className={className}>
-            <Component />
+            <Icon iconId={iconId} />
             <span>{text}
             </span>
         </Link>

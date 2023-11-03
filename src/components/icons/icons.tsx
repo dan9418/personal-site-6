@@ -1,5 +1,5 @@
 import { ComponentType } from "react";
-import Svg from "./Icon";
+import Svg from "./Svg";
 
 
 export enum IconId {

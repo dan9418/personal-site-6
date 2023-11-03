@@ -1,18 +1,13 @@
 import PageHeader from "@/components/PageHeader";
-import ICON from "@/components/icons/icons";
+import Icon from "@/components/icons/Icon";
 import { CONTACT_LINKS } from "@/data/links.data";
 import Link from "next/link";
 import React from "react";
 
-
 const L: React.FC<any> = ({ href, text, iconId }) => {
-
-    // @ts-ignore
-    const Component = ICON[iconId];
-
     return (
         <Link href={href}>
-            <Component size={24} />
+            <Icon iconId={iconId} size={24} />
             <span>{text}
             </span>
         </Link>
