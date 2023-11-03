@@ -7,6 +7,8 @@ export const LINK_GITHUB = "https://github.com/dan9418/"
 export const LINK_PLAY_WHAT = "https://www.play-what.com/"
 export const LINK_LINKED_IN = "https://www.linkedin.com/in/danielbednarczyk/"
 
+
+
 export const CONTACT_LINKS = [
     {
         text: 'Spotify',

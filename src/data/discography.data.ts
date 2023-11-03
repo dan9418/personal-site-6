@@ -1,13 +1,5 @@
-export enum IconId {
-  Bandcamp,
-  Instagram,
-  Facebook,
-  YouTube,
-  Spotify,
-  AppleMusic,
-  SoundCloud,
-  Lyrics,
-}
+import { IconId } from "@/assets/icons";
+
 
 export interface ILink {
   //text: string;
