@@ -1,24 +1,34 @@
 import PageHeader from "@/components/PageHeader";
+import ICON from "@/components/icons/icons";
 import { CONTACT_LINKS } from "@/data/links.data";
 import Link from "next/link";
-import React, { ReactNode } from "react";
+import React from "react";
 
 
-const List: React.FC<{ items: ReactNode[] }> = ({ items }) => {
+const L: React.FC<any> = ({ href, text, iconId }) => {
+
+    // @ts-ignore
+    const Component = ICON[iconId];
+
     return (
-        <ul className="list-disc ml-4 mb-4">
-            {items.map((d, i) => <li key={i}>{d}</li>)}
-        </ul>
-    );
+        <Link href={href}>
+            <Component size={24} />
+            <span>{text}
+            </span>
+        </Link>
+    )
 };
 
-const ResumePage = () => {
+
+const ContactPage = () => {
     return (
         <>
             <PageHeader text='Contact' />
-            <List items={CONTACT_LINKS.map(link => <Link href={link.href}>{link.text}</Link>)} />
+            <ul className="list-disc ml-4 mb-4">
+                {CONTACT_LINKS.map(link => <li key={link.href}><L {...link} /></li>)}
+            </ul>
         </>
     )
 }
 
-export default ResumePage
+export default ContactPage

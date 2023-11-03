@@ -16,8 +16,9 @@ const NavLink: React.FC<{ href: string, text: string, iconId: IconId }> = ({ hre
 
     return (
         <Link href={href} className={className}>
-            <Component size={24} />
-            {text}
+            <Component />
+            <span>{text}
+            </span>
         </Link>
     )
 }

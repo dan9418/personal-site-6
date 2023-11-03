@@ -31,7 +31,7 @@ export enum IconId {
 const ICON: Record<IconId, ComponentType> = {
 	art:
 		props => (
-			<Svg version="1.1" viewBox="0 0 100 100">
+			<Svg version="1.1" viewBox="0 0 100 100" {...props}>
 				<path
 					fill="#000"
 					fillOpacity="1"
@@ -45,7 +45,7 @@ const ICON: Record<IconId, ComponentType> = {
 					overflow="visible"
 					transform="translate(0 -952.362)"
 					visibility="visible"
-					{...props}
+					
 				/>
 			</Svg>
 		),
@@ -70,9 +70,6 @@ const ICON: Record<IconId, ComponentType> = {
 	github:
 		props => (
 			<Svg
-
-				width="512"
-				height="512"
 				viewBox="0 0 24 24"
 				{...props}
 			>
@@ -85,7 +82,6 @@ const ICON: Record<IconId, ComponentType> = {
 	home:
 		props => (
 			<Svg
-
 				enableBackground="new 0 0 16 16"
 				version="1.1"
 				viewBox="0 0 16 16"
@@ -223,7 +219,7 @@ const ICON: Record<IconId, ComponentType> = {
 		),
 	menu:
 		props => (
-			<Svg xmlns='http://www.w3.org/2000/Svg' width='512' height='512' viewBox='0 -53 384 384' {...props}>
+			<Svg xmlns='http://www.w3.org/2000/Svg' viewBox='0 -53 384 384' {...props}>
 				<path d='M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 277.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0'></path>
 			</Svg>
 		),
