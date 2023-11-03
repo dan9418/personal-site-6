@@ -1,3 +1,5 @@
+import { IconId } from "@/components/icons/icons"
+
 export const LINK_SPOTIFY = "https://open.spotify.com/artist/3PMMGV0yEGktq0tGQ7lO0r?si=RzMrSZoRQK2htXfe-fTs5Q"
 export const LINK_BANDCAMP = "https://strangefrontiers.bandcamp.com/"
 export const LINK_APPLE_MUSIC = "https://music.apple.com/us/artist/dan-bednarczyk/1590781822"
@@ -12,35 +14,48 @@ export const LINK_LINKED_IN = "https://www.linkedin.com/in/danielbednarczyk/"
 export const CONTACT_LINKS = [
     {
         text: 'Spotify',
-        href: LINK_SPOTIFY
+        href: LINK_SPOTIFY,
+        iconId: IconId.Spotify,
+        isPrimary: true,
     },
     {
         text: 'Bandcamp',
-        href: LINK_BANDCAMP
+        href: LINK_BANDCAMP,
+        iconId: IconId.Bandcamp,
+        isPrimary: true,
     },
     {
         text: 'Apple Music',
-        href: LINK_APPLE_MUSIC
+        href: LINK_APPLE_MUSIC,
+        iconId: IconId.Music
     },
     {
         text: 'Weekly Beats',
-        href: LINK_WEEKLY_BEATS
+        href: LINK_WEEKLY_BEATS,
+        iconId: IconId.Music
     },
     {
         text: 'Instagram',
-        href: LINK_INSTAGRAM
+        href: LINK_INSTAGRAM,
+        iconId: IconId.Instagram,
+        isPrimary: true,
     },
     {
         text: 'GitHub',
-        href: LINK_GITHUB
+        href: LINK_GITHUB,
+        iconId: IconId.GitHub,
+        isPrimary: true,
     },
     {
         text: 'Play What?',
-        href: LINK_PLAY_WHAT
+        href: LINK_PLAY_WHAT,
+        iconId: IconId.Music
     },
     {
         text: 'LinkedIn',
-        href: LINK_LINKED_IN
+        href: LINK_LINKED_IN,
+        iconId: IconId.LinkedIn,
+        isPrimary: true,
     }
 ];
 
@@ -48,18 +63,22 @@ export const CONTACT_LINKS = [
 export const NAV_LINKS = [
     {
         text: 'Home',
-        href: '/'
+        href: '/',
+        iconId: IconId.Home
     },
     {
         text: 'Resume',
-        href: '/resume'
+        href: '/resume',
+        iconId: IconId.Resume
     },
     {
         text: 'Portfolio',
-        href: '/portfolio'
+        href: '/portfolio',
+        iconId: IconId.Art
     },
     {
         text: 'Contact',
-        href: '/contact'
+        href: '/contact',
+        iconId: IconId.Calendar
     }
 ]
