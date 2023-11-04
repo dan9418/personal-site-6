@@ -1,26 +1,20 @@
 import PageHeader from "@/components/PageHeader";
-import Icon from "@/components/icons/Icon";
+import SmartLink from "@/components/SmartLink";
 import { CONTACT_LINKS } from "@/data/links.data";
-import Link from "next/link";
-import React from "react";
-
-const L: React.FC<any> = ({ href, text, iconId }) => {
-    return (
-        <Link href={href}>
-            <Icon iconId={iconId} size={24} />
-            <span>{text}
-            </span>
-        </Link>
-    )
-};
-
 
 const ContactPage = () => {
     return (
         <>
             <PageHeader text='Contact' />
-            <ul className="list-disc ml-4 mb-4">
-                {CONTACT_LINKS.map(link => <li key={link.href}><L {...link} /></li>)}
+            <ul className="">
+                {CONTACT_LINKS.map(link => <li key={link.href}>
+                    <SmartLink href={link.href} iconId={link.iconId} iconSize={24} className="p-2 block"
+                        fgColor="text-black"
+                        fgColorHover="hover:text-blue-300"
+                    >
+                        {link.text}
+                    </SmartLink>
+                </li>)}
             </ul>
         </>
     )

@@ -1,24 +1,21 @@
 'use client'
 
 import { NAV_LINKS } from "@/data/links.data"
-import Link from "next/link"
 import { usePathname } from "next/navigation"
-import Icon from "./icons/Icon"
+import SmartLink from "./SmartLink"
 import { IconId } from "./icons/icons"
 
 const NavLink: React.FC<{ href: string, text: string, iconId: IconId }> = ({ href, text, iconId }) => {
     const pathname = usePathname();
-    let className = "block h-full px-4 text-white hover:bg-slate-600 inline-flex justify-center items-center";
+    let className = "block h-full px-4 hover:bg-slate-600 inline-flex justify-center items-center";
     if (pathname === href) {
         className = `${className} border-white border-b-2`
     }
 
     return (
-        <Link href={href} className={className}>
-            <Icon iconId={iconId} />
-            <span>{text}
-            </span>
-        </Link>
+        <SmartLink href={href} className={className} iconId={iconId} fgColor="text-white" fgColorHover="hover:text-blue-300" iconSize={16}>
+            {text}
+        </SmartLink>
     )
 }
 
