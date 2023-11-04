@@ -9,21 +9,36 @@ export const LINK_GITHUB = "https://github.com/dan9418/"
 export const LINK_PLAY_WHAT = "https://www.play-what.com/"
 export const LINK_LINKED_IN = "https://www.linkedin.com/in/danielbednarczyk/"
 
-
-
 export const CONTACT_LINKS = [
+    {
+        text: 'LinkedIn',
+        href: LINK_LINKED_IN,
+        iconId: IconId.LinkedIn,
+    },
+    {
+        text: 'GitHub',
+        href: LINK_GITHUB,
+        iconId: IconId.GitHub,
+    },
+    {
+        text: 'Instagram',
+        href: LINK_INSTAGRAM,
+        iconId: IconId.Instagram,
+    },
     {
         text: 'Spotify',
         href: LINK_SPOTIFY,
         iconId: IconId.Spotify,
-        isPrimary: true,
     },
     {
         text: 'Bandcamp',
         href: LINK_BANDCAMP,
         iconId: IconId.Bandcamp,
-        isPrimary: true,
-    },
+    }
+];
+
+
+export const OTHER_LINKS = [
     {
         text: 'Apple Music',
         href: LINK_APPLE_MUSIC,
@@ -35,30 +50,11 @@ export const CONTACT_LINKS = [
         iconId: IconId.Music
     },
     {
-        text: 'Instagram',
-        href: LINK_INSTAGRAM,
-        iconId: IconId.Instagram,
-        isPrimary: true,
-    },
-    {
-        text: 'GitHub',
-        href: LINK_GITHUB,
-        iconId: IconId.GitHub,
-        isPrimary: true,
-    },
-    {
         text: 'Play What?',
         href: LINK_PLAY_WHAT,
         iconId: IconId.Music
-    },
-    {
-        text: 'LinkedIn',
-        href: LINK_LINKED_IN,
-        iconId: IconId.LinkedIn,
-        isPrimary: true,
     }
 ];
-
 
 export const NAV_LINKS = [
     {

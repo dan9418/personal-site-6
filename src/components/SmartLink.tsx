@@ -6,7 +6,7 @@ import { IconId } from "./icons/icons";
 interface ISmartLinkProps extends PropsWithChildren {
     className: string;
     href: string;
-    iconId: IconId;
+    iconId?: IconId;
     iconSize?: number;
     fgColor?: string;
     fgColorHover?: string;
