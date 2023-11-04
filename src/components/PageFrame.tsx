@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react"
+import Footer from "./Footer"
 import Nav from "./Nav"
 
 const PageFrame: React.FC<PropsWithChildren> = ({ children }) => {
@@ -10,6 +11,7 @@ const PageFrame: React.FC<PropsWithChildren> = ({ children }) => {
                     {children}
                 </div>
             </main>
+            <Footer />
         </>
     )
 }
