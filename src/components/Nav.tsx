@@ -8,7 +8,7 @@ import Icon from "./icons/Icon"
 import { useState } from "react"
 import LinksList from "./LinksList"
 
-const NavLink: React.FC<{ href: string, text: string, iconId: IconId }> = ({ href, text, iconId }) => {
+const NavLink: React.FC<{ href: string, text: string, iconId?: IconId }> = ({ href, text, iconId }) => {
     const pathname = usePathname();
     let className = "block h-full px-4 hover:bg-slate-600 inline-flex justify-center items-center";
     if (pathname === href) {

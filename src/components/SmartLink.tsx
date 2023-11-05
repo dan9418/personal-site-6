@@ -22,7 +22,7 @@ const SmartLink: React.FC<ISmartLinkProps> = ({ href, iconId, iconSize, children
 
     let classes = `
         ${isBlock ? 'flex' : 'inline-flex'}
-        align-items gap-2  
+        items-center gap-2  
         ${fgColor ? ` ${fgColor}` : ''} 
         ${fgColorHover ? ` ${fgColorHover}` : ''} 
         ${bgColor ? ` ${bgColor}` : ''} 
