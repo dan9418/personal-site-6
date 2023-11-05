@@ -8,7 +8,7 @@ import SmartLink from "./SmartLink"
 import Icon from "./icons/Icon"
 import { IconId } from "./icons/icons"
 
-const NavLink: React.FC<{ href: string, text: string, iconId?: IconId }> = ({ href, text, iconId }) => {
+const NavLink: React.FC<{ href: string, text?: string, iconId?: IconId }> = ({ href, text, iconId }) => {
     const isPathname = useIsPathname(href);
     let className = "block h-full hover:bg-slate-600 inline-flex justify-center items-center text-sm lg:text-base px-2 lg:px-4";
     if (isPathname) {
