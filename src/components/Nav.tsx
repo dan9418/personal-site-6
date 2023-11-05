@@ -12,7 +12,7 @@ const NavLink: React.FC<{ href: string, text: string, iconId?: IconId }> = ({ hr
     const isPathname = useIsPathname(href);
     let className = "block h-full hover:bg-slate-600 inline-flex justify-center items-center text-sm lg:text-base px-2 lg:px-4";
     if (isPathname) {
-        className = `${className} border-white border-b-2`
+        className = `${className} border-white border-b-4`
     }
 
     return (

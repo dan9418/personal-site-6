@@ -1,18 +1,13 @@
-import { IconId } from "@/assets/icons";
+import { IconId } from "@/components/icons/icons";
+import { ILink } from "./links.data";
 
 
-export interface ILink {
-  //text: string;
-  href: string;
-  id: IconId;
-}
-
-export interface ITrack {
+interface ITrack {
   name: string;
   writer?: string;
 }
 
-export interface IAlbum {
+interface IAlbum {
   name: string;
   releaseDate: string;
   remasterDate?: string;
@@ -21,7 +16,7 @@ export interface IAlbum {
   tracks: ITrack[];
 }
 
-export interface IArtist {
+interface IArtist {
   name: string;
   links: ILink[];
   albums: IAlbum[];
@@ -32,19 +27,19 @@ const DISCOGRAPHY_DATA: IArtist[] = [
     name: "Dan Bednarczyk",
     links: [
       {
-        id: IconId.Bandcamp,
+        iconId: IconId.Bandcamp,
         href: "https://atlaseuphoria.bandcamp.com/",
       },
       {
-        id: IconId.Instagram,
+        iconId: IconId.Instagram,
         href: "https://www.instagram.com/atlaseuphoria/",
       },
       {
-        id: IconId.Facebook,
+        iconId: IconId.Facebook,
         href: "https://www.facebook.com/AtlasEuphoria",
       },
       {
-        id: IconId.YouTube,
+        iconId: IconId.YouTube,
         href: "https://www.youtube.com/channel/UCyq0-Fr2jM-GrbTB-SKOSkA",
       },
     ],
@@ -60,11 +55,11 @@ const DISCOGRAPHY_DATA: IArtist[] = [
         ],
         links: [
           {
-            id: IconId.Bandcamp,
+            iconId: IconId.Bandcamp,
             href: "https://atlaseuphoria.bandcamp.com/album/need-not",
           },
           {
-            id: IconId.Lyrics,
+            iconId: IconId.Lyrics,
             href: "",
           },
         ],
@@ -87,18 +82,18 @@ const DISCOGRAPHY_DATA: IArtist[] = [
         ],
         links: [
           {
-            id: IconId.Bandcamp,
+            iconId: IconId.Bandcamp,
             href: "https://atlaseuphoria.bandcamp.com/album/silent-city",
           },
           {
-            id: IconId.SoundCloud,
+            iconId: IconId.SoundCloud,
             href: "https://soundcloud.com/atlaseuphoria/sets/silent-city",
           },
           {
-            id: IconId.YouTube,
+            iconId: IconId.YouTube,
             href: "https://www.youtube.com/watch?v=BdZc8xkQArw&feature=youtu.be",
           },
-          { id: IconId.Lyrics, href: "" },
+          { iconId: IconId.Lyrics, href: "" },
         ],
         artSrc: "",
       },
@@ -108,15 +103,15 @@ const DISCOGRAPHY_DATA: IArtist[] = [
     name: "The Vectors",
     links: [
       {
-        id: IconId.SoundCloud,
+        iconId: IconId.SoundCloud,
         href: "https://soundcloud.com/livingfiction/",
       },
       {
-        id: IconId.Facebook,
+        iconId: IconId.Facebook,
         href: "https://www.facebook.com/TheVectors14",
       },
       {
-        id: IconId.YouTube,
+        iconId: IconId.YouTube,
         href: "https://www.youtube.com/channel/UCVJVbOg-thDA-qI4L_fHfdg",
       },
     ],
@@ -127,10 +122,10 @@ const DISCOGRAPHY_DATA: IArtist[] = [
         tracks: [{ name: "Peanut Butter Jam" }],
         links: [
           {
-            id: IconId.SoundCloud,
+            iconId: IconId.SoundCloud,
             href: "https://soundcloud.com/livingfiction/peanut-butter-jam",
           },
-          { id: IconId.Lyrics, href: "" },
+          { iconId: IconId.Lyrics, href: "" },
         ],
         artSrc: "",
       },
@@ -156,15 +151,15 @@ const DISCOGRAPHY_DATA: IArtist[] = [
         ],
         links: [
           {
-            id: IconId.SoundCloud,
+            iconId: IconId.SoundCloud,
             href: "https://soundcloud.com/livingfiction/sets/songs-and-how-not-to-write-them",
           },
           {
-            id: IconId.YouTube,
+            iconId: IconId.YouTube,
             href: "https://www.youtube.com/watch?v=WDdDrvqkbOk&list=PLF0EOAvsOKeCp_HowkIF6CVeExxuDXYRm",
           },
           {
-            id: IconId.Lyrics,
+            iconId: IconId.Lyrics,
             href: "",
           },
         ],
@@ -182,14 +177,14 @@ const DISCOGRAPHY_DATA: IArtist[] = [
         ],
         links: [
           {
-            id: IconId.SoundCloud,
+            iconId: IconId.SoundCloud,
             href: "https://soundcloud.com/livingfiction/sets/the-vectors-yellow-snow",
           },
           {
-            id: IconId.YouTube,
+            iconId: IconId.YouTube,
             href: "https://www.youtube.com/watch?v=f2EV4bBB4E8&list=PLF0EOAvsOKeAv8CK8nJT1sRIGEK17w96s",
           },
-          { id: IconId.Lyrics, href: "" },
+          { iconId: IconId.Lyrics, href: "" },
         ],
         artSrc: "",
       },
@@ -220,14 +215,14 @@ const DISCOGRAPHY_DATA: IArtist[] = [
         ],
         links: [
           {
-            id: IconId.SoundCloud,
+            iconId: IconId.SoundCloud,
             href: "https://soundcloud.com/atlaseuphoria/sets/human-architecture",
           },
           {
-            id: IconId.YouTube,
+            iconId: IconId.YouTube,
             href: "https://www.youtube.com/watch?v=vzKuYdfCpdk",
           },
-          { id: IconId.Lyrics, href: "" },
+          { iconId: IconId.Lyrics, href: "" },
         ],
         artSrc: "",
       },
@@ -258,14 +253,14 @@ const DISCOGRAPHY_DATA: IArtist[] = [
         ],
         links: [
           {
-            id: IconId.SoundCloud,
+            iconId: IconId.SoundCloud,
             href: "https://soundcloud.com/livingfiction/sets/out-of-reach",
           },
           {
-            id: IconId.YouTube,
+            iconId: IconId.YouTube,
             href: "https://www.youtube.com/watch?v=mL2CbEXX6lo&list=PLF0EOAvsOKeDZnT4z2Z-tZaFzL0qVuk6f",
           },
-          { id: IconId.Lyrics, href: "" },
+          { iconId: IconId.Lyrics, href: "" },
         ],
         artSrc: "",
       },

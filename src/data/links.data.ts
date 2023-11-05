@@ -1,7 +1,7 @@
 import { IconId } from "@/components/icons/icons";
 
 export interface ILink {
-    text: string;
+    text?: string;
     caption?: string;
     href: string;
     iconId?: IconId;
