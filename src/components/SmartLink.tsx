@@ -7,7 +7,7 @@ interface ISmartLinkProps extends PropsWithChildren {
     className: string;
     href: string;
     iconId?: IconId;
-    iconSize?: number;
+    iconSize?: string;
     fgColor?: string;
     fgColorHover?: string;
     bgColor?: string;
@@ -32,7 +32,7 @@ const SmartLink: React.FC<ISmartLinkProps> = ({ href, iconId, iconSize, children
 
     return (
         <Tag href={href} className={classes} target={isRelative ? '' : '_blank'}>
-            {iconId && <Icon iconId={iconId} size={iconSize} color={fgColor} colorHover={fgColorHover} />}
+            {iconId && <Icon iconId={iconId} className={iconSize} />}
             {children}
         </Tag>
     )

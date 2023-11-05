@@ -1,10 +1,14 @@
-import { NAV_LINKS } from "@/data/links.data"
-import LinksList, { LinkCategoriesList } from "./LinksList"
+'use client'
+
+import { LINK_CONTACT } from "@/data/links.data";
+import { useIsPathname } from "@/utils/hooks";
+import { LinkCategoriesList } from "./LinksList";
 
 const Footer: React.FC = () => {
+    const isContactPage = useIsPathname(LINK_CONTACT.href);
     return (
         <footer className="p-8 bg-slate-500 text-white">
-            <LinkCategoriesList x isDark />
+            {!isContactPage && <LinkCategoriesList x isDark />}
             <address className="text-xs text-slate-100 pt-8 flex flex-col justify-center items-center">
                 <p>Dan Bednarczyk</p>
                 <p>11/5/23</p>

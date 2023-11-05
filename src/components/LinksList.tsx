@@ -8,7 +8,7 @@ const LinksList: React.FC<{ links: ILink[], isDark?: boolean }> = ({ links, isDa
                 <SmartLink
                     href={link.href}
                     iconId={link.iconId}
-                    iconSize={28}
+                    iconSize='h-6 w6'
                     className="p-2 block rounded-md"
                     fgColor={isDark ? 'text-white' : "text-black"}
                     fgColorHover={isDark ? 'hover:text-gray-300' : "hover:text-gray-700"}
@@ -31,7 +31,7 @@ const LinksList: React.FC<{ links: ILink[], isDark?: boolean }> = ({ links, isDa
 
 export const LinkCategoriesList: React.FC<{ categories?: ILinkCategory[], x?: boolean, isDark?: boolean }> =
     ({ categories = CATEGORY_LINKS, x = false, isDark = false }) => {
-        const className = x ? 'lg:flex w-full justify-center space-evenly gap-8' : '';
+        const className = x ? 'lg:flex w-full justify-center gap-16' : '';
         return (
             <ul className={className}>
                 {categories.map(cat => {

@@ -3,6 +3,8 @@ import PageHeader from '@/components/PageHeader'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import headshot from '/public/img/headshot.jpg'
+import { IconId } from '@/components/icons/icons'
+import Icon from '@/components/icons/Icon'
 
 const Row: React.FC<{ imgSrc: StaticImageData, imgAlt: string, text: string, flip?: boolean, linkHref: string, linkText: string, title: string }> =
   ({ imgSrc, imgAlt, text, flip, linkHref, linkText, title }) => {
@@ -39,12 +41,10 @@ export default function Home() {
     <PageFrame>
       <div className="">
         <PageHeader text="Hi, I'm Dan Bednarczyk" />
-        <div className="block p-4 m-6 bg-slate-200 border border-gray-200 rounded-lg shadow">
-          <p className="font-normal text-gray-700">
-            I'm a web developer and multimedia artist based in Pittsburgh, PA. I have the communication skills and domain knowledge needed to facilitate effective conversations between stakeholders in tech, product, design, and beyond.
-          </p>
+        <div className='text-center text-slate-700 pt-4'>
+          Software Engineer | Web Designer | Multimedia Artist<br />
+          <Icon iconId={IconId.Location} color="text-slate-700" />Pittsburgh, PA
         </div>
-
         <Row title='Web Developer' linkHref='/resume' linkText='Professional Resume' imgAlt='Headshot' imgSrc={headshot} text="I have over 8 years of professional software engineering experience delivering first-class solutions to some of the largest technology companies in the country. I have built websites designed to handle traffic from over X million users a day and METRIC. My work includes integrations for ads, tracking, SEO optimization, device responsivity, edge-caching, accessibility, and URL-rewriting schemes." />
         <Row title='Multimedia Artist' linkHref='/portfolio' linkText='Creative Portfolio' imgAlt='Headshot' imgSrc={headshot} text="As a creative artist, I currently use the moniker Strange Frontiers, but I have nearly two decades of experience in the creative arts. I am a multi-disciplinary musician, including performance, songwriting, audio engineering, mixing, and education. As a visual artist, I have applied my graphic design skills to dozens of projects for album covers, posters, websites, logos, t-shirts, and tattoos. I also work with physical media and I have an extensive portfolio spanning many different formats." flip />
       </div>
