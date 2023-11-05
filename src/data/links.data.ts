@@ -49,18 +49,21 @@ export const LINK_SPOTIFY: ILink = {
 
 export const LINK_APPLE_MUSIC: ILink = {
     text: 'Apple Music',
+    caption: 'Dan Bednarczyk',
     href: "https://music.apple.com/us/artist/dan-bednarczyk/1590781822",
     iconId: IconId.Music
 };
 
 export const LINK_WEEKLY_BEATS: ILink = {
     text: 'Weekly Beats',
+    caption: 'pineapple_dan',
     href: "https://weeklybeats.com/pineapple_dan",
     iconId: IconId.Music
 };
 
 export const LINK_PLAY_WHAT: ILink = {
     text: 'Play What?',
+    caption: 'Music Education Website',
     href: "https://www.play-what.com/",
     iconId: IconId.Music
 };
@@ -78,7 +81,7 @@ export const CATEGORY_LINKS: ILinkCategory[] = [
     },
     {
         name: 'Music',
-        links: [LINK_SPOTIFY, LINK_APPLE_MUSIC, LINK_BANDCAMP, LINK_WEEKLY_BEATS]
+        links: [LINK_SPOTIFY, LINK_APPLE_MUSIC, LINK_BANDCAMP/*, LINK_WEEKLY_BEATS, LINK_PLAY_WHAT*/]
     }
 ];
 

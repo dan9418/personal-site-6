@@ -1,4 +1,4 @@
-import LinksList from "@/components/LinksList";
+import { LinkCategoriesList } from "@/components/LinksList";
 import PageHeader from "@/components/PageHeader";
 
 const ContactPage = () => {
@@ -6,7 +6,7 @@ const ContactPage = () => {
         <>
             <PageHeader text='Contact' />
             <div className="max-w-3xl m-auto ">
-                <LinksList />
+                <LinkCategoriesList />
             </div>
         </>
     )

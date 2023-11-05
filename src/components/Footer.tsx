@@ -1,12 +1,14 @@
 import { NAV_LINKS } from "@/data/links.data"
+import LinksList, { LinkCategoriesList } from "./LinksList"
 
 const Footer: React.FC = () => {
     return (
-        <footer className="p-12 bg-slate-500 text-white">
-            <div className="w-full h-full max-w-5xl flex flex-col justify-center items-center">
-                <p>Author: Dan Bednarczyk</p>
-                <p>Last Updated: 11/3/23</p>
-            </div>
+        <footer className="p-8 bg-slate-500 text-white">
+            <LinkCategoriesList x isDark />
+            <address className="text-xs text-slate-100 pt-8 flex flex-col justify-center items-center">
+                <p>Dan Bednarczyk</p>
+                <p>11/5/23</p>
+            </address>
         </footer>
     )
 }
