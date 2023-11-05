@@ -31,7 +31,7 @@ const SmartLink: React.FC<ISmartLinkProps> = ({ href, iconId, iconSize, children
     `;
 
     return (
-        <Tag href={href} className={classes}>
+        <Tag href={href} className={classes} target={isRelative ? '' : '_blank'}>
             {iconId && <Icon iconId={iconId} size={iconSize} color={fgColor} colorHover={fgColorHover} />}
             {children}
         </Tag>

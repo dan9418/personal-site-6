@@ -10,7 +10,7 @@ const LinksList = () => {
                         <li>
                             <h3 className="border-b border-slate-500 my-2 pb-1 font-bold">{cat.name}</h3>
                         </li>
-                        {CONTACT_LINKS.map(link => <li key={link.href}>
+                        {cat.links.map(link => <li key={link.href}>
                             <SmartLink
                                 href={link.href}
                                 iconId={link.iconId}
@@ -18,7 +18,7 @@ const LinksList = () => {
                                 className="p-2 block rounded-md"
                                 fgColor="text-black"
                                 fgColorHover="hover:text-gray-700"
-                                bgColorHover="hover:bg-slate-100"
+                                bgColorHover="hover:bg-slate-200"
                             >
                                 <div>
                                     <div className="text-sm">

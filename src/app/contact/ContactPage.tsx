@@ -5,7 +5,9 @@ const ContactPage = () => {
     return (
         <>
             <PageHeader text='Contact' />
-            <LinksList />
+            <div className="max-w-3xl m-auto ">
+                <LinksList />
+            </div>
         </>
     )
 }

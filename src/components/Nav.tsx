@@ -30,15 +30,14 @@ const Nav: React.FC = () => {
                 <div className="w-full h-full max-w-5xl">
                     {NAV_LINKS.map(link => <NavLink key={link.text} {...link} />)}
                 </div>
-                <button className="h-full w-12 flex justify-center items-center fixed right-0"
+                <button className="h-12 w-12 flex justify-center items-center fixed top-0 right-12 z-10"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                     <Icon iconId={IconId.Menu} size={16} color="white" />
                 </button>
             </nav>
             {isMenuOpen &&
-                <section className="h-full w-64 fixed right-0 top-12 bg-slate-100 p-4">
-                    <h2>Contact</h2>
+                <section className="h-full w-80 fixed right-12 top-12 bg-slate-100 p-4 shadow">
                     <LinksList />
                 </section>
             }
