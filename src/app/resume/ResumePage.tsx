@@ -4,12 +4,12 @@ import { RESUME, Resume, TechSkillsItem, WorkExpItem } from '../../data/resume.d
 
 const ResumeSubheader: React.FC<Omit<WorkExpItem, 'items'>> = ({ company, duration, position, location }) => {
     return (
-        <div className="resume-subheader">
-            <h3 className="flex justify-between text-xl font-bold">
+        <div className="resume-subheader whitespace-nowrap">
+            <h3 className="flex flex-wrap justify-between lg:text-xl font-bold">
                 <span className="company">{company}</span>
                 <span className="date">{duration}</span>
             </h3>
-            <h4 className="flex justify-between text-l italic">
+            <h4 className="flex flex-wrap justify-between lg:text-l italic">
                 <span className="position">{position}</span>
                 <span className="location">{location}</span>
             </h4>
@@ -19,7 +19,7 @@ const ResumeSubheader: React.FC<Omit<WorkExpItem, 'items'>> = ({ company, durati
 
 const List: React.FC<{ items: ReactNode[] }> = ({ items }) => {
     return (
-        <ul className="list-disc ml-4 mb-4">
+        <ul className="list-disc ml-4 mb-4 text-sm lg:text-base">
             {items.map((d, i) => <li key={i}>{d}</li>)}
         </ul>
     );
@@ -61,7 +61,7 @@ const ResumePage = () => {
 
             <section>
                 <SectionHeader title="Technical Skills" />
-                <div className='skills grid grid-cols-4'>
+                <div className='skills grid md:grid-cols-2 lg:grid-cols-4'>
                     {RESUME.techSkills.map(skill => <TechSkill key={skill.category} data={skill} />)}
                 </div>
             </section>
