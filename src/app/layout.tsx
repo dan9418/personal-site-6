@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Dan Bednarczyk',
   description: 'Technical resume, creative portfolio, and contact information',
+  // icons: {
+  //   icon: '/favicon.ico',
+  // },
 }
 
 export default function RootLayout({
