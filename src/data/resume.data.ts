@@ -24,14 +24,15 @@ const TECH_SKILLS: TechSkillsItem[] = [
         category: 'Libraries',
         items: [
             'React 18',
-            'Next 13',
+            'Next 14',
             'Gatsby',
             'Styled Components',
+            'Tailwind CSS',
             'Redux',
             'Google Analytics',
             'Formik',
             'Recoil',
-            'Misc. Unit Testing',
+            'Misc Unit Testing',
         ]
     },
     {
@@ -39,9 +40,11 @@ const TECH_SKILLS: TechSkillsItem[] = [
         items: [
             'REST / HTTP',
             'Scrum / Kanban',
-            'SEO / SSR vs CSR',
+            'SEO',
+            'SSR vs CSR',
             'Web Vitals',
             'Accessibility',
+            'Telemetry (GA, Chartbeat)',
             'Edge Servers (Fastly)',
             'Error Tracking (Sentry)',
             'CI/CD (AWS, Azure)',
@@ -87,7 +90,7 @@ const WORK_EXP: WorkExpItem[] = [
             'Architects solutions for ad, tracking, and caching needs',
             'Supports complex routing requirements and URL-rewriting patterns',
             'Facilitates communication between stakeholders in tech, product, & design on distributed Agile team',
-            'Manages junior developers and presents technical material to broader company and executives',
+            'Manages junior developers and presents technical material to a wide audience',
         ]
     },
     {
@@ -134,7 +137,7 @@ const EDUCATION: WorkExpItem = {
 
 export const PROJECTS: string[] = [
     'Created Play What, an educational music theory website and toolkit (in Beta)',
-    'Developed a personal portfolio website using Next App Router and Tailwind CSS',
+    'Developed this personal website using the Next App Router and Tailwind CSS',
     'Volunteer program coordinator at nonprofit music instrument lending library',
     'Eagle Scout',
 ]

@@ -3,10 +3,11 @@ import Icon from '@/components/icons/Icon'
 import { IconId } from '@/components/icons/icons'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
+import { ReactNode } from 'react'
 import creativeHeadshot from '/public/img/creative-headshot.jpg'
 import headshot from '/public/img/headshot.jpg'
 
-const Row: React.FC<{ imgSrc: StaticImageData, imgAlt: string, text: string, flip?: boolean, linkHref: string, linkText: string, title: string }> =
+const Row: React.FC<{ imgSrc: StaticImageData, imgAlt: string, text: ReactNode, flip?: boolean, linkHref: string, linkText: string, title: string }> =
     ({ imgSrc, imgAlt, text, flip, linkHref, linkText, title }) => {
 
         return (
@@ -48,14 +49,16 @@ const DATA = {
             linkHref: '/resume',
             linkText: 'Technical Resume',
             imgSrc: headshot,
-            text: 'I have over 8 years of professional software engineering experience delivering first-class solutions to some of the largest technology companies in the country. I have built websites designed to handle traffic from over X million users a day and METRIC. My work includes integrations for ads, tracking, SEO optimization, device responsivity, edge-caching, accessibility, and URL-rewriting schemes.'
+            text:
+                <>I have <strong>over 8 years of professional software engineering experience</strong> delivering first-class solutions to some of the largest technology companies in the country. I have built sites that handle over <strong>30 million page views a day</strong> from a large variety of users and devices. My experience includes integrations for ads, tracking, SEO optimization, device responsivity, edge-caching, accessibility, and URL-rewriting schemes.</>
         },
         {
             title: 'Multimedia Artist',
             linkHref: '/portfolio',
             linkText: 'Creative Portfolio',
             imgSrc: creativeHeadshot,
-            text: 'As a creative artist, I currently use the moniker Strange Frontiers, but I have nearly two decades of experience in the creative arts. I am a multi-disciplinary musician, including performance, songwriting, audio engineering, mixing, and education. As a visual artist, I have applied my graphic design skills to dozens of projects for album covers, posters, websites, logos, t-shirts, and tattoos. I also work with physical media and I have an extensive portfolio spanning many different formats.'
+            text:
+                <>As a creative artist, I use the moniker "<strong>Strange Frontiers</strong>" and I have nearly two decades of experience in the creative arts. I am a multi-disciplinary musician, including work in songwriting, audio engineering, mixing, performance, and education. As a visual artist, I have applied my graphic design skills to dozens of projects for album covers, posters, websites, logos, t-shirts, and tattoos. I also work with physical media and I have an extensive portfolio spanning many different formats.</>
         }
     ]
 } as const;

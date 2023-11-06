@@ -36,7 +36,7 @@ const TechSkill: React.FC<{ data: TechSkillsItem }> = ({ data }) => {
 
 const SectionHeader: React.FC<{ title: string }> = ({ title }) => {
     return (
-        <h2 className="text-2xl font-bold my-4 pb-4  border-b border-black">{title}</h2>
+        <h2 className="text-2xl font-bold my-4 pb-2  border-b border-black">{title}</h2>
     );
 };
 
