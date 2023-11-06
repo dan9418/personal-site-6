@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description: 'Collection of multimedia art projects',
   }
 
-export default function Home() {
+export default function Page() {
     return (
         <PageFrame>
             <PortfolioPage />
