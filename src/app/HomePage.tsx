@@ -58,7 +58,7 @@ const DATA = {
             linkText: 'Creative Portfolio',
             imgSrc: creativeHeadshot,
             text:
-                <>As a creative artist, I use the moniker "<strong>Strange Frontiers</strong>" and I have nearly two decades of experience in the creative arts. I am a multi-disciplinary musician, including work in songwriting, audio engineering, mixing, performance, and education. As a visual artist, I have applied my graphic design skills to dozens of projects for album covers, posters, websites, logos, t-shirts, and tattoos. I also work with physical media and I have an extensive portfolio spanning many different formats.</>
+                <>As a creative artist, I use the moniker <strong>Strange Frontiers</strong> and I have nearly two decades of experience in the creative arts. I am a multi-disciplinary musician, including work in songwriting, audio engineering, mixing, performance, and education. As a visual artist, I have applied my graphic design skills to dozens of projects for album covers, posters, websites, logos, t-shirts, and tattoos. I also work with physical media and I have an extensive portfolio spanning many different formats.</>
         }
     ]
 } as const;
