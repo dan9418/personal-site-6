@@ -4,12 +4,12 @@ import { RESUME, Resume, TechSkillsItem, WorkExpItem } from '../../data/resume.d
 
 const ResumeSubheader: React.FC<Omit<WorkExpItem, 'items'>> = ({ company, duration, position, location }) => {
     return (
-        <div className="resume-subheader whitespace-nowrap">
-            <h3 className="flex flex-wrap justify-between lg:text-xl font-bold">
+        <div className="resume-subheader whitespace-nowrap overflow-hidden">
+            <h3 className="flex flex-wrap justify-between text-base lg:text-xl font-bold">
                 <span className="company">{company}</span>
                 <span className="date">{duration}</span>
             </h3>
-            <h4 className="flex flex-wrap justify-between lg:text-l italic">
+            <h4 className="flex flex-wrap justify-between text-base lg:text-l italic">
                 <span className="position">{position}</span>
                 <span className="location">{location}</span>
             </h4>
