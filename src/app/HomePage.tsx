@@ -13,8 +13,8 @@ const Row: React.FC<{ imgSrc: StaticImageData, imgAlt: string, text: ReactNode, 
         return (
             <div className="mt-4 lg:mt-8">
                 <h2 className={`text-2xl font-bold pb-2 mb-4 border-b border-black`}>{title}</h2>
-                <div className="flex flex-col gap-4 justify-center align-center lg:grid grid-cols-4 gap-4">
-                    <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 justify-center align-center lg:grid grid-cols-[180px_auto] gap-6">
+                    <div className="">
                         <Image
                             className="rounded m-auto lg:m-0"
                             src={imgSrc}
@@ -23,7 +23,7 @@ const Row: React.FC<{ imgSrc: StaticImageData, imgAlt: string, text: ReactNode, 
                             priority
                         />
                     </div>
-                    <div className='col-span-3'>
+                    <div>
                         <p className='text-sm lg:text-base text-center lg:text-left'>
                             {text}
                         </p>
