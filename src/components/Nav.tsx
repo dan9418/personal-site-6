@@ -10,7 +10,7 @@ import { IconId } from "./icons/icons"
 
 const NavLink: React.FC<{ href: string, text?: string, iconId?: IconId }> = ({ href, text, iconId }) => {
     const isPathname = useIsPathname(href);
-    let className = "block h-full hover:bg-slate-600 inline-flex justify-center items-center text-sm lg:text-base px-2 lg:px-4";
+    let className = "block h-full hover:theme-d-bg-2 inline-flex justify-center items-center text-sm lg:text-base px-2 lg:px-4";
     if (isPathname) {
         className = `${className} border-white border-b-4`
     }
@@ -27,7 +27,7 @@ const Nav: React.FC = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 right-0 h-12 bg-slate-500 flex justify-center items-center">
+            <nav className="fixed top-0 left-0 right-0 h-12 theme-d-bg-3 flex justify-center items-center">
                 <div className="w-full h-full max-w-5xl relative flex flex-nowrap">
                     {NAV_LINKS.map(link => <NavLink key={link.text} {...link} iconId={undefined} />)}
                     <div className="absolute right-0 top-0 h-12 hidden lg:block">
@@ -42,7 +42,7 @@ const Nav: React.FC = () => {
             </nav>
             {isMenuOpen &&
                 <section
-                    className="h-full w-80 fixed right-0 top-12 bg-slate-100 p-4 shadow lg:hidden">
+                    className="h-full w-80 fixed right-0 top-12 theme-l-bg-2 p-4 shadow lg:hidden">
                     <LinkCategoriesList />
                 </section>
             }

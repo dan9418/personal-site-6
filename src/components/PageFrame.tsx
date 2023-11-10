@@ -6,8 +6,8 @@ const PageFrame: React.FC<PropsWithChildren> = ({ children }) => {
     return (
         <>
             <Nav />
-            <main className="min-h-screen bg-slate-400 flex justify-center box-border">
-                <div className="w-full max-w-5xl py-16 lg:py-24 px-4 lg:px-8 bg-slate-300 min-h-screen">
+            <main className="min-h-screen theme-l-bg-2 flex justify-center box-border">
+                <div className="w-full max-w-5xl py-16 lg:py-24 px-4 lg:px-8 theme-l-bg-1 min-h-screen">
                     {children}
                 </div>
             </main>

@@ -7,7 +7,7 @@ import { LinkCategoriesList } from "./LinksList";
 const Footer: React.FC = () => {
     const isContactPage = useIsPathname(LINK_CONTACT.href);
     return (
-        <footer className="p-8 bg-slate-500 theme-d-fg-1">
+        <footer className="p-8 theme-d-bg-3 theme-d-fg-1">
             {!isContactPage && <LinkCategoriesList x isDark />}
             <address className="text-xs theme-d-fg-1 pt-8 flex flex-col justify-center items-center">
                 <p>Dan Bednarczyk</p>
