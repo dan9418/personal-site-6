@@ -29,7 +29,7 @@ const Row: React.FC<{ imgSrc: StaticImageData, imgAlt: string, text: ReactNode, 
                         </p>
                         <Link
                             href={linkHref}
-                            className='flex justify-center py-2 px-4 mt-4 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800'>
+                            className='flex justify-center py-2 px-4 mt-4 rounded-lg focus:shadow-outline theme-bg-link'>
                             {linkText}
                             <Icon iconId={IconId.NavRight} className='h-4 w-4 ml-2 mt-1' />
                         </Link>
