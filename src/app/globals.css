@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .theme-l-fg-1 {
+        @apply text-black;
+    }
+
+    .theme-l-fg-2 {
+        @apply text-gray-700;
+    }
+
+    .theme-l-fg-3 {
+        @apply text-gray-600;
+    }
+
+    .theme-d-fg-1 {
+        @apply text-white;
+    }
+
+    .theme-d-fg-2 {
+        @apply text-gray-300;
+    }
+
+    .theme-d-fg-3 {
+        @apply text-gray-500;
+    }
+}

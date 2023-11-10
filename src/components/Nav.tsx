@@ -16,7 +16,7 @@ const NavLink: React.FC<{ href: string, text?: string, iconId?: IconId }> = ({ h
     }
 
     return (
-        <SmartLink href={href} className={className} iconId={iconId} fgColor="text-white" fgColorHover="hover:text-gray-300" >
+        <SmartLink href={href} className={className} iconId={iconId} fgColor="theme-d-fg-1" fgColorHover="hover:theme-d-fg-2" >
             {text}
         </SmartLink>
     )
@@ -37,7 +37,7 @@ const Nav: React.FC = () => {
                 <button className="h-12 w-12 flex justify-center items-center fixed top-0 right-0 z-10 lg:hidden"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    <Icon iconId={IconId.Menu} className="h-6 w-6 text-white"/>
+                    <Icon iconId={IconId.Menu} className="h-6 w-6 theme-d-fg-1"/>
                 </button>
             </nav>
             {isMenuOpen &&
