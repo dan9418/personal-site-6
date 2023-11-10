@@ -12,7 +12,7 @@ const LinksList: React.FC<{ links: ILink[], isDark?: boolean }> = ({ links, isDa
                     className="p-2 block rounded-md"
                     fgColor={isDark ? 'theme-d-fg-1' : "theme-l-fg-1"}
                     fgColorHover={isDark ? 'hover:theme-d-fg-2' : "hover:theme-l-fg-2"}
-                    bgColorHover={isDark ? 'hover:bg-slate-800' : "hover:bg-slate-200"}
+                    bgColorHover={isDark ? 'hover:bg-slate-600' : "hover:bg-slate-200"}
                 >
                     <div>
                         <div className="text-sm">
@@ -38,7 +38,7 @@ export const LinkCategoriesList: React.FC<{ categories?: ILinkCategory[], x?: bo
                     return (
                         <>
                             <li>
-                                <h3 className={`border-b ${isDark ? 'border-slate-200' : 'border-slate-500'} my-2 pb-1 font-bold`}>{cat.name}</h3>
+                                <h3 className={`border-b ${isDark ? 'theme-d-border' : 'theme-l-border'} my-2 pb-1 font-bold`}>{cat.name}</h3>
                                 <LinksList links={cat.links} isDark={isDark} />
                             </li>
                         </>

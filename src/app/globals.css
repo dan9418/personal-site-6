@@ -26,4 +26,36 @@
     .theme-d-fg-3 {
         @apply text-gray-500;
     }
+
+    .theme-l-bg-1 {
+        @apply text-black;
+    }
+
+    .theme-l-bg-2 {
+        @apply text-gray-700;
+    }
+
+    .theme-l-bg-3 {
+        @apply text-gray-600;
+    }
+
+    .theme-d-bg-1 {
+        @apply text-white;
+    }
+
+    .theme-d-bg-2 {
+        @apply text-gray-300;
+    }
+
+    .theme-d-bg-3 {
+        @apply text-gray-500;
+    }
+
+    .theme-d-border {
+        @apply border-slate-200;
+    }
+
+    .theme-l-border {
+        @apply border-slate-500;
+    }
 }

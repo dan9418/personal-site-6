@@ -12,7 +12,7 @@ const Row: React.FC<{ imgSrc: StaticImageData, imgAlt: string, text: ReactNode, 
 
         return (
             <div className="mt-4 lg:mt-8">
-                <h2 className={`text-2xl font-bold pb-2 mb-4 border-b border-black`}>{title}</h2>
+                <h2 className={`text-2xl font-bold pb-2 mb-4 border-b theme-l-border`}>{title}</h2>
                 <div className="flex flex-col gap-4 justify-center align-center lg:grid grid-cols-[180px_auto] gap-6">
                     <div className="">
                         <Image
@@ -67,10 +67,10 @@ const HomePage = () => {
     return (
         <>
             <PageHeader text={DATA.header} />
-            <div className='text-center text-slate-700 pt-4'>
+            <div className='text-center theme-l-fg-2 pt-4'>
                 <div>{DATA.subheader}</div>
                 <div className='flex align-center justify-center mt-2'>
-                    <Icon iconId={IconId.Location} className="text-slate-700 h-4 w-4 mt-1 mr-1" />
+                    <Icon iconId={IconId.Location} className="theme-l-fg-2 h-4 w-4 mt-1 mr-1" />
                     <span>{DATA.location}</span>
                 </div>
             </div>

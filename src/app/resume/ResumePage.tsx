@@ -5,11 +5,11 @@ import { RESUME, Resume, TechSkillsItem, WorkExpItem } from '../../data/resume.d
 const ResumeSubheader: React.FC<Omit<WorkExpItem, 'items'>> = ({ company, duration, position, location }) => {
     return (
         <div className="resume-subheader whitespace-nowrap overflow-hidden">
-            <h3 className="flex flex-wrap justify-between text-base lg:text-xl font-bold">
-                <span className="company">{company}</span>
+            <h3 className="flex flex-col lg:flex-row justify-between text-base lg:text-l font-bold">
+                <span className="company text-lg lg:text-xl">{company}</span>
                 <span className="date">{duration}</span>
             </h3>
-            <h4 className="flex flex-wrap justify-between text-base lg:text-l italic">
+            <h4 className="flex flex-col lg:flex-row justify-between text-base lg:text-l mb-1 theme-l-fg-2">
                 <span className="position">{position}</span>
                 <span className="location">{location}</span>
             </h4>
@@ -36,7 +36,7 @@ const TechSkill: React.FC<{ data: TechSkillsItem }> = ({ data }) => {
 
 const SectionHeader: React.FC<{ title: string }> = ({ title }) => {
     return (
-        <h2 className="text-2xl font-bold my-4 pb-2  border-b border-black">{title}</h2>
+        <h2 className="text-2xl font-bold my-4 pb-2  border-b theme-l-border">{title}</h2>
     );
 };
 
