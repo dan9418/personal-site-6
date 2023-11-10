@@ -3,59 +3,51 @@
 @tailwind utilities;
 
 @layer components {
+
+    /* SHARED */
+    .theme-nav {
+        @apply bg-slate-600 text-white;
+    }
+
+    /* LIGHT */
     .theme-l-fg-1 {
-        @apply text-black;
+        @apply text-black dark:text-white;
     }
 
     .theme-l-fg-2 {
-        @apply text-gray-700;
-    }
-
-    .theme-l-fg-3 {
-        @apply text-gray-600;
-    }
-
-    .theme-d-fg-1 {
-        @apply text-white;
-    }
-
-    .theme-d-fg-2 {
-        @apply text-gray-300;
-    }
-
-    .theme-d-fg-3 {
-        @apply text-gray-500;
+        @apply text-gray-600 dark:text-gray-400;
     }
 
     .theme-l-bg-1 {
-        @apply bg-slate-200;
+        @apply bg-slate-200 dark:bg-slate-800;
     }
 
     .theme-l-bg-2 {
-        @apply bg-slate-300;
-    }
-
-    .theme-l-bg-3 {
-        @apply bg-slate-400;
-    }
-
-    .theme-d-bg-1 {
-        @apply bg-slate-800;
-    }
-
-    .theme-d-bg-2 {
-        @apply bg-slate-700;
-    }
-
-    .theme-d-bg-3 {
-        @apply bg-slate-600;
-    }
-
-    .theme-d-border {
-        @apply border-slate-200;
+        @apply bg-slate-400 dark:bg-slate-600;
     }
 
     .theme-l-border {
-        @apply border-slate-500;
+        @apply border-slate-500 dark:border-slate-200;
+    }
+
+    /* DARK */
+    .theme-d-fg-1 {
+        @apply text-white dark:text-black;
+    }
+
+    .theme-d-fg-2 {
+        @apply text-gray-400 dark:text-gray-600;
+    }
+
+    .theme-d-bg-1 {
+        @apply bg-slate-800 dark:bg-slate-200;
+    }
+
+    .theme-d-bg-2 {
+        @apply bg-slate-600 dark:bg-slate-400;
+    }
+
+    .theme-d-border {
+        @apply border-slate-200 dark:border-slate-500;
     }
 }

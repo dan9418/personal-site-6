@@ -12,13 +12,13 @@ const LinksList: React.FC<{ links: ILink[], isDark?: boolean }> = ({ links, isDa
                     className="p-2 block rounded-md"
                     fgColor={isDark ? 'theme-d-fg-1' : "theme-l-fg-1"}
                     fgColorHover={isDark ? 'hover:theme-d-fg-2' : "hover:theme-l-fg-2"}
-                    bgColorHover={isDark ? 'hover:theme-d-bg-2' : "hover:theme-l-bg-2"}
+                    //bgColorHover="hover:shadow-[0_4px_0px_rgb(0,0,0)]"
                 >
                     <div>
                         <div className="text-sm">
                             {link.text}
                         </div>
-                        <div className={`${isDark ? 'theme-d-fg-2' : 'theme-l-fg-3'} text-xs`}>
+                        <div className={`${isDark ? 'theme-d-fg-2' : 'theme-l-fg-2'} text-xs`}>
                             {link.caption}
                         </div>
                     </div>

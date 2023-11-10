@@ -27,7 +27,7 @@ const Nav: React.FC = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 right-0 h-12 theme-d-bg-3 flex justify-center items-center">
+            <nav className="fixed top-0 left-0 right-0 h-12 theme-nav flex justify-center items-center">
                 <div className="w-full h-full max-w-5xl relative flex flex-nowrap">
                     {NAV_LINKS.map(link => <NavLink key={link.text} {...link} iconId={undefined} />)}
                     <div className="absolute right-0 top-0 h-12 hidden lg:block">
