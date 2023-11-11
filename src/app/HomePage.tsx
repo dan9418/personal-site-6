@@ -50,7 +50,7 @@ const DATA = {
             linkText: 'Technical Resume',
             imgSrc: headshot,
             text:
-                <>I have <strong>over 8 years of professional software engineering experience</strong> delivering first-class solutions to some of the largest technology companies in the country. I have built sites that handle over <strong>30 million page views a day</strong> from a large variety of users and devices. My experience includes integrations for ads, tracking, SEO optimization, device responsivity, edge-caching, accessibility, and URL-rewriting schemes.</>
+                <>I have <strong>over 8 years of professional software engineering experience</strong> delivering first-class solutions to some of the largest technology companies in the country. Currently, at MaxPreps, I manage the frontend of a site that handles over <strong>30 million page views a day</strong> from a large variety of users and devices. My experience includes integrations for ads, tracking, SEO optimization, device responsivity, edge-caching, accessibility, and URL-rewriting schemes.</>
         },
         {
             title: 'Multimedia Artist',

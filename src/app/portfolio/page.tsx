@@ -4,7 +4,7 @@ import PortfolioPage from "./PortfolioPage";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Dan Bednarczyk | Creative Portfolio',
+    title: 'Portfolio | Dan Bednarczyk',
     description: 'Collection of multimedia art projects',
   }
 

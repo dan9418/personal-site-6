@@ -3,7 +3,7 @@ import ResumePage from "./ResumePage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Dan Bednarczyk | Technical Resume',
+    title: 'Resume | Dan Bednarczyk',
     description: 'Software engineering resume',
   }
 

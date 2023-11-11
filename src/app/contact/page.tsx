@@ -3,7 +3,7 @@ import ContactPage from "./ContactPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Dan Bednarczyk | Contact',
+    title: 'Contact | Dan Bednarczyk',
     description: 'Contact info',
   }
 

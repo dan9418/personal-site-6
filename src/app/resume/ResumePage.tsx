@@ -57,7 +57,7 @@ const WorkExp: React.FC<{ data: Resume['workExp'][number] }> = ({ data }) => {
 const ResumePage = () => {
     return (
         <>
-            <PageHeader text='Resume' />
+            <PageHeader text='Résumé' />
 
             <section>
                 <SectionHeader title="Technical Skills" />

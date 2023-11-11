@@ -1,15 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Karla } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Karla({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Dan Bednarczyk',
-  description: 'Technical resume, creative portfolio, and contact information',
-  // icons: {
-  //   icon: '/favicon.ico',
-  // },
+  description: 'Technical resume, creative portfolio, and contact information'
 }
 
 export default function RootLayout({
@@ -19,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='darkad'>
-      <body className={`${inter.className} theme-l-fg-1`}>{children}</body>
+      <body className={`${font.className} theme-l-fg-1`}>{children}</body>
     </html>
   )
 }
