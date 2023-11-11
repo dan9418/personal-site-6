@@ -10,7 +10,7 @@ import { IconId } from "./icons/icons"
 
 const NavLink: React.FC<{ href: string, text?: string, iconId?: IconId }> = ({ href, text, iconId }) => {
     const isPathname = useIsPathname(href);
-    let className = "block h-full hover:theme-d-bg-1 inline-flex justify-center items-center text-sm lg:text-base px-2 lg:px-4";
+    let className = "block h-full hover:theme-d-bg-1 inline-flex justify-center items-center text-sm lg:text-base px-2 lg:px-4 transition-colors duration-200";
     if (isPathname) {
         className = `${className} theme-d-bg-1`
     }

@@ -10,7 +10,7 @@
     }
 
     .theme-bg-link {
-        @apply text-white bg-indigo-700 hover:bg-indigo-800 transition-colors duration-150;
+        @apply text-white bg-indigo-700 hover:bg-indigo-800 transition-colors duration-200;
     }
 
     .theme-fg-link {
