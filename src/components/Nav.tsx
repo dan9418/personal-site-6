@@ -10,13 +10,13 @@ import { IconId } from "./icons/icons"
 
 const NavLink: React.FC<{ href: string, text?: string, iconId?: IconId }> = ({ href, text, iconId }) => {
     const isPathname = useIsPathname(href);
-    let className = "block h-full hover:theme-d-bg-2 inline-flex justify-center items-center text-sm lg:text-base px-2 lg:px-4";
+    let className = "block h-full hover:theme-d-bg-1 inline-flex justify-center items-center text-sm lg:text-base px-2 lg:px-4";
     if (isPathname) {
-        className = `${className} border-white border-b-4`
+        className = `${className} theme-d-bg-1`
     }
 
     return (
-        <SmartLink href={href} className={className} iconId={iconId} fgColor="theme-d-fg-1" fgColorHover="hover:theme-d-fg-2" >
+        <SmartLink href={href} className={className} iconId={iconId} fgColor="theme-d-fg-1" >
             {text}
         </SmartLink>
     )
@@ -27,7 +27,7 @@ const Nav: React.FC = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 right-0 h-12 theme-nav flex justify-center items-center">
+            <nav className="fixed top-0 left-0 right-0 h-12 theme-nav flex justify-center items-center shadow-xl">
                 <div className="w-full h-full max-w-5xl relative flex flex-nowrap">
                     {NAV_LINKS.map(link => <NavLink key={link.text} {...link} iconId={undefined} />)}
                     <div className="absolute right-0 top-0 h-12 hidden lg:block">
@@ -37,7 +37,7 @@ const Nav: React.FC = () => {
                 <button className="h-12 w-12 flex justify-center items-center fixed top-0 right-0 z-10 lg:hidden"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    <Icon iconId={IconId.Menu} className="h-6 w-6 theme-d-fg-1"/>
+                    <Icon iconId={IconId.Menu} className="h-6 w-6 theme-d-fg-1" />
                 </button>
             </nav>
             {isMenuOpen &&
