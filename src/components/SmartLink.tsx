@@ -4,7 +4,7 @@ import Icon from "./icons/Icon";
 import { IconId } from "./icons/icons";
 
 interface ISmartLinkProps extends PropsWithChildren {
-    className: string;
+    className?: string;
     href: string;
     iconId?: IconId;
     iconSize?: string;
@@ -14,7 +14,7 @@ interface ISmartLinkProps extends PropsWithChildren {
     bgColorHover?: string;
 }
 
-const SmartLink: React.FC<ISmartLinkProps> = ({ href, iconId, iconSize, children, fgColor, className, fgColorHover, bgColor, bgColorHover }) => {
+const SmartLink: React.FC<ISmartLinkProps> = ({ href, iconId, iconSize, children, fgColor, className = '', fgColorHover, bgColor, bgColorHover }) => {
     const isRelative = href.startsWith('/');
     const Tag = isRelative ? Link : 'a';
 

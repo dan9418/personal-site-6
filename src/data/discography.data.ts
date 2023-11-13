@@ -1,4 +1,5 @@
 import { IconId } from "@/components/icons/icons";
+import { getIdFromText } from "@/utils/stringUtils";
 import { ILink } from "./links.data";
 
 
@@ -269,3 +270,5 @@ const DISCOGRAPHY_DATA: IArtist[] = [
 ];
 
 export default DISCOGRAPHY_DATA;
+
+export const ALBUM_IDS = DISCOGRAPHY_DATA.flatMap(artist => artist.albums.map(album => getIdFromText(album.name)));

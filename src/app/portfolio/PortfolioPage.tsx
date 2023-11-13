@@ -1,5 +1,7 @@
 import PageHeader from "@/components/PageHeader";
+import SmartLink from "@/components/SmartLink";
 import ART_DATA from "@/data/art.data";
+import { ALBUM_IDS } from "@/data/discography.data";
 import Image from "next/image";
 
 
@@ -12,6 +14,8 @@ const PortfolioPage = () => {
             <p className="bg-stone-200 rounded-lg border border-red-500 p-2 m-4 font-bold text-center">
                 DISCLAIMER: This page is still under construction!
             </p>
+            <h2>Discography</h2>
+            <ul>{ALBUM_IDS.map(id => <li key={id}><SmartLink href={`/portfolio/album/${id}/`}>{id}</SmartLink></li>)}</ul>
             {ART_DATA.map(section => {
                 const { name, images } = section;
                 return (<>

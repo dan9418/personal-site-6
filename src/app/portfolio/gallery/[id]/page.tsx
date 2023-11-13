@@ -6,6 +6,10 @@ export const metadata: Metadata = {
     description: '',
 }
 
+export function generateStaticParams() {
+    return [{ id: '1' }, { id: '2' }, { id: '3' }]
+}
+
 // @ts-ignore
 const Page = ({ params }) => {
     return (

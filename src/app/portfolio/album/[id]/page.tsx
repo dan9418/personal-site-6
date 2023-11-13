@@ -6,6 +6,8 @@ export const metadata: Metadata = {
     description: '',
 }
 
+
+
 // @ts-ignore
 const Page = ({ params }) => {
     return (

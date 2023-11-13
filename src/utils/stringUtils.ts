@@ -1,0 +1,1 @@
+export const getIdFromText = (name: string) => name.trim().toLowerCase().replaceAll(' ', '-').replace(/[^0-9a-z-]/gi, '');
