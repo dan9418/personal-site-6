@@ -1,3 +1,5 @@
+import { getIdFromText } from "@/utils/stringUtils";
+
 const ART_DATA = [
     {
         name: 'Album Covers',
@@ -266,3 +268,7 @@ const ART_DATA = [
 ] as const;
 
 export default ART_DATA;
+
+export const GALLERY_IDS = ART_DATA.map(gallery => getIdFromText(gallery.name));
+
+export const getGalleryById = (id: string) => ART_DATA.find(gallery => getIdFromText(gallery.name) === id);

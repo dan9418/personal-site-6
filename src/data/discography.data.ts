@@ -29,15 +29,11 @@ const DISCOGRAPHY_DATA: IArtist[] = [
     links: [
       {
         iconId: IconId.Bandcamp,
-        href: "https://atlaseuphoria.bandcamp.com/",
+        href: "https://strangefrontiers.bandcamp.com/",
       },
       {
         iconId: IconId.Instagram,
-        href: "https://www.instagram.com/atlaseuphoria/",
-      },
-      {
-        iconId: IconId.Facebook,
-        href: "https://www.facebook.com/AtlasEuphoria",
+        href: "https://www.instagram.com/strangefrontiers/",
       },
       {
         iconId: IconId.YouTube,
@@ -57,14 +53,14 @@ const DISCOGRAPHY_DATA: IArtist[] = [
         links: [
           {
             iconId: IconId.Bandcamp,
-            href: "https://atlaseuphoria.bandcamp.com/album/need-not",
+            href: "https://strangefrontiers.bandcamp.com/album/need-not",
           },
           {
             iconId: IconId.Lyrics,
             href: "",
           },
         ],
-        artSrc: "",
+        artSrc: "/img/albums/need_not.jpg",
       },
       {
         name: "Silent City",
@@ -84,11 +80,11 @@ const DISCOGRAPHY_DATA: IArtist[] = [
         links: [
           {
             iconId: IconId.Bandcamp,
-            href: "https://atlaseuphoria.bandcamp.com/album/silent-city",
+            href: "https://strangefrontiers.bandcamp.com/album/silent-city",
           },
           {
             iconId: IconId.SoundCloud,
-            href: "https://soundcloud.com/atlaseuphoria/sets/silent-city",
+            href: "https://soundcloud.com/strangefrontiers/sets/silent-city",
           },
           {
             iconId: IconId.YouTube,
@@ -96,7 +92,7 @@ const DISCOGRAPHY_DATA: IArtist[] = [
           },
           { iconId: IconId.Lyrics, href: "" },
         ],
-        artSrc: "",
+        artSrc: "/img/albums/silent_city.jpg",
       },
     ],
   },
@@ -128,7 +124,7 @@ const DISCOGRAPHY_DATA: IArtist[] = [
           },
           { iconId: IconId.Lyrics, href: "" },
         ],
-        artSrc: "",
+        artSrc: "/img/albums/peanut_butter_jam.jpg",
       },
       {
         name: "Songs; And How NOT To Write Them!",
@@ -164,7 +160,7 @@ const DISCOGRAPHY_DATA: IArtist[] = [
             href: "",
           },
         ],
-        artSrc: "",
+        artSrc: "/img/albums/songs_and_how_not_to_write_them.jpg",
       },
       {
         name: "Yellow Snow",
@@ -187,7 +183,7 @@ const DISCOGRAPHY_DATA: IArtist[] = [
           },
           { iconId: IconId.Lyrics, href: "" },
         ],
-        artSrc: "",
+        artSrc: "/img/albums/yellow_snow.jpg",
       },
     ],
   },
@@ -217,7 +213,7 @@ const DISCOGRAPHY_DATA: IArtist[] = [
         links: [
           {
             iconId: IconId.SoundCloud,
-            href: "https://soundcloud.com/atlaseuphoria/sets/human-architecture",
+            href: "https://soundcloud.com/strangefrontiers/sets/human-architecture",
           },
           {
             iconId: IconId.YouTube,
@@ -225,7 +221,7 @@ const DISCOGRAPHY_DATA: IArtist[] = [
           },
           { iconId: IconId.Lyrics, href: "" },
         ],
-        artSrc: "",
+        artSrc: "/img/albums/human_architecture.jpg",
       },
       {
         name: "Out Of Reach",
@@ -263,7 +259,7 @@ const DISCOGRAPHY_DATA: IArtist[] = [
           },
           { iconId: IconId.Lyrics, href: "" },
         ],
-        artSrc: "",
+        artSrc: "/img/albums/out_of_reach.jpg",
       },
     ],
   },
@@ -272,3 +268,5 @@ const DISCOGRAPHY_DATA: IArtist[] = [
 export default DISCOGRAPHY_DATA;
 
 export const ALBUM_IDS = DISCOGRAPHY_DATA.flatMap(artist => artist.albums.map(album => getIdFromText(album.name)));
+
+export const getAlbumById = (id: string) => DISCOGRAPHY_DATA.find(artist => artist.albums.find(gallery => getIdFromText(gallery.name) === id))?.albums.find(gallery => getIdFromText(gallery.name) === id);

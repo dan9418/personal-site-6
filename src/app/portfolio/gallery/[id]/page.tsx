@@ -1,4 +1,5 @@
 import PageFrame from "@/components/PageFrame";
+import { GALLERY_IDS, getGalleryById } from "@/data/art.data";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -6,15 +7,13 @@ export const metadata: Metadata = {
     description: '',
 }
 
-export function generateStaticParams() {
-    return [{ id: '1' }, { id: '2' }, { id: '3' }]
-}
+export const generateStaticParams = () => GALLERY_IDS.map(id => { id });
 
 // @ts-ignore
 const Page = ({ params }) => {
     return (
         <PageFrame>
-            <pre>{JSON.stringify(params, null, 2)}</pre>
+            <pre>{JSON.stringify(getGalleryById(params.id), null, 2)}</pre>
         </PageFrame>
     )
 }
