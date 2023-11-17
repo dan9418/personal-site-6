@@ -9,6 +9,10 @@
         @apply bg-slate-600 text-white;
     }
 
+    .theme-bg-gradient {
+        background: radial-gradient(rgb(203 213 225), rgb(148 163 184));
+    }
+
     .theme-bg-link {
         @apply text-white bg-blue-700 hover:bg-blue-800 transition-colors duration-200;
     }
