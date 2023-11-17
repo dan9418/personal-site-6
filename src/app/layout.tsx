@@ -1,3 +1,4 @@
+import DarkThemeManager from '@/components/DarkThemeManager'
 import type { Metadata } from 'next'
 import { Karla } from 'next/font/google'
 import './globals.css'
@@ -15,8 +16,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='darkad'>
-      <body className={`${font.className} theme-l-fg-1`}>{children}</body>
+    <html lang="en" >
+      <body className={`${font.className} theme-l-fg-1`}>
+        <DarkThemeManager>
+          {children}
+        </DarkThemeManager>
+      </body>
     </html>
   )
 }
