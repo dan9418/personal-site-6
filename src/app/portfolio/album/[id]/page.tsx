@@ -1,7 +1,6 @@
 import PageFrame from "@/components/PageFrame";
 import PageHeader from "@/components/PageHeader";
 import SmartLink from "@/components/SmartLink";
-import { IconId } from "@/components/icons/icons";
 import { ALBUM_IDS, getAlbumById } from "@/data/discography.data";
 import { Metadata } from 'next';
 import Image from "next/image";
