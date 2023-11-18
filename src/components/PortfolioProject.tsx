@@ -1,6 +1,7 @@
 import SmartLink from "@/components/SmartLink";
 import Image from "next/image";
 import { FC } from "react";
+import PageHeader from "./PageHeader";
 
 interface PortfolioProjectProps {
     title: string;
@@ -11,16 +12,19 @@ interface PortfolioProjectProps {
 
 const PortfolioProject: FC<PortfolioProjectProps> = ({ title, description, imgSrc, href }) => {
     return (
-        <SmartLink className="grid grid-cols-[180px_auto] gap-4" href={href}>
-            <div>
-                <Image src={imgSrc} alt={title} width={180} height={180} />
+        <SmartLink href={href} className="block p-4 hover:bg-slate-100 rounded-lg">
+            <div className="grid grid-cols-[180px_auto] gap-4 items-start">
+                <div>
+                    <Image src={imgSrc} alt={title} width={180} height={180} />
+                </div>
+                <div>
+                    <PageHeader text={title} level='h4' />
+                    <p className="">
+                        {description}
+                    </p>
+                </div>
             </div>
-            <div>
-                <h2>{title}</h2>
-                <p className="">
-                    {description}
-                </p>
-            </div>
+
         </SmartLink>
     )
 }

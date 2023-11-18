@@ -21,8 +21,8 @@ const SmartLink: React.FC<ISmartLinkProps> = ({ href, iconId, iconSize, children
     const isBlock = className.split(' ').includes('block');
 
     let classes = `
-        ${isBlock ? 'flex' : 'inline-flex'}
-        items-center gap-2  
+        ${iconId ? isBlock ? 'flex' : 'inline-flex' : ''}
+        ${iconId ? 'items-center gap-2' : ''}  
         ${fgColor ? ` ${fgColor}` : ''} 
         ${fgColorHover ? ` ${fgColorHover}` : ''} 
         ${bgColor ? ` ${bgColor}` : ''} 

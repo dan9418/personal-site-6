@@ -12,7 +12,7 @@ const PortfolioPage = () => {
                 DISCLAIMER: This page is still under construction!
             </p>
 
-            <PageHeader text="Art" level="h2" />
+            <PageHeader text="Graphic Design" level="h2" className="mb-4" />
             <PortfolioProjectList items={ART_DATA.map(gallery => ({
                 title: gallery.name,
                 description: gallery.description,
@@ -20,10 +20,10 @@ const PortfolioPage = () => {
                 href: `/portfolio/gallery/${getIdFromText(gallery.name)}/`
             }))} />
 
-            <PageHeader text="Music" level="h2" />    
+            <PageHeader text="Music" level="h2" className="mt-8 mb-4" />    
             {DISCOGRAPHY_DATA.map(artist => (
                 <>
-                    <PageHeader text={artist.name} level="h3" />
+                    <PageHeader text={artist.name} level="h3" className="mb-4"/>
                     <PortfolioProjectList items={artist.albums.map(album => ({
                         title: album.name,
                         description: album.releaseDate,

@@ -25,7 +25,7 @@ interface IArtist {
 
 const DISCOGRAPHY_DATA: IArtist[] = [
   {
-    name: "Dan Bednarczyk",
+    name: "Strange Frontiers",
     links: [
       {
         iconId: IconId.Bandcamp,
