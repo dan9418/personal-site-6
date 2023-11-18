@@ -1,9 +1,7 @@
 import PageHeader from "@/components/PageHeader";
 import PortfolioProjectList from "@/components/PortfolioProject";
-import PortfolioProject from "@/components/PortfolioProject";
-import SmartLink from "@/components/SmartLink";
 import ART_DATA from "@/data/art.data";
-import { ALBUM_IDS } from "@/data/discography.data";
+import DISCOGRAPHY_DATA from "@/data/discography.data";
 import { getIdFromText } from "@/utils/stringUtils";
 
 const PortfolioPage = () => {
@@ -22,8 +20,17 @@ const PortfolioPage = () => {
                 href: `/portfolio/gallery/${getIdFromText(gallery.name)}/`
             }))} />
 
-            <h2>Discography</h2>
-            <ul>{ALBUM_IDS.map(id => <li key={id}><SmartLink href={`/portfolio/album/${id}/`}>{id}</SmartLink></li>)}</ul>
+            {DISCOGRAPHY_DATA.map(artist => (
+                <>
+                    <h3>{artist.name}</h3>
+                    <PortfolioProjectList items={artist.albums.map(album => ({
+                        title: album.name,
+                        description: album.releaseDate,
+                        imgSrc: album.artSrc,
+                        href: `/portfolio/album/${getIdFromText(album.name)}/`
+                    }))} />
+                </>
+            ))}
         </>
     )
 }
