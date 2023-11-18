@@ -193,7 +193,7 @@ const DISCOGRAPHY_DATA: IArtist[] = [
     albums: [
       {
         name: "Human Architecture",
-        releaseDate: "1/17",
+        releaseDate: "1/13/17",
         tracks: [
           { name: "History Begins", writer: "Temperance" },
           { name: "Collector", writer: "Lust" },
