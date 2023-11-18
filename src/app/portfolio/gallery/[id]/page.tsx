@@ -1,10 +1,11 @@
 import PageFrame from "@/components/PageFrame";
+import PageHeader from "@/components/PageHeader";
 import { GALLERY_IDS, getGalleryById } from "@/data/art.data";
 import { Metadata } from 'next';
 import Image from "next/image";
 
 export const metadata: Metadata = {
-    title: 'Dan Bednarczyk',
+    title: 'Gallery | Dan Bednarczyk',
     description: '',
 }
 
@@ -17,9 +18,9 @@ const Page = ({ params }) => {
     const { name, description, images } = gallery;
     return (
         <PageFrame>
-            <h2 className="text-2xl font-bold mt-16 mb-8">{name}</h2>
-            <p>{description}</p>
-            <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 align-center justify-center">
+            <PageHeader text={name} />
+            <p className="my-16 text-center">{description}</p>
+            <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 align-center justify-center items-center">
                 {images.map(img => (
                     <li key={img.path}>
                         <Image src={img.path} alt={img.name} width={256} height={256} />

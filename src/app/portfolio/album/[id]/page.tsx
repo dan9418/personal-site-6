@@ -1,12 +1,12 @@
+import MusicLinksLinks from "@/components/MusicLinksList";
 import PageFrame from "@/components/PageFrame";
 import PageHeader from "@/components/PageHeader";
-import SmartLink from "@/components/SmartLink";
 import { ALBUM_IDS, getAlbumById } from "@/data/discography.data";
 import { Metadata } from 'next';
 import Image from "next/image";
 
 export const metadata: Metadata = {
-    title: 'Dan Bednarczyk',
+    title: 'Album | Dan Bednarczyk',
     description: '',
 }
 
@@ -19,18 +19,11 @@ const Page = ({ params }) => {
     return (
         <PageFrame>
             <PageHeader text={album.name} />
-            Released: <h2>{album.releaseDate}</h2>
-            {album.remasterDate && <h2>{album.releaseDate}</h2>}
-            <ul className="flex gap-4">
-                {album?.links.map(link => (
-                    <li key={link.href}>
-                        <SmartLink href={link.href} iconId={link.iconId} iconSize='h-6 w6'>
-                            {link.iconId}
-                            {link.caption && <span>{link.caption}</span>}
-                        </SmartLink>
-                    </li>
-                ))}
-            </ul>
+            {album.releaseDate && <PageHeader level='h3' isCentered className="mt-4" text={`Released: ${album.releaseDate}`} />}
+            {album.remasterDate && <PageHeader level='h3' isCentered className="mt-4" text={`Remastered: ${album.remasterDate}`} />}
+            <div className="flex items-center justify-center mt-8">
+                <MusicLinksLinks links={album.links} />
+            </div>
             <Image src={album?.artSrc} alt={album?.name} width={256} height={256} className="py-8" />
             <ul className="list-decimal ml-4">
                 {album?.tracks.map(track => (
