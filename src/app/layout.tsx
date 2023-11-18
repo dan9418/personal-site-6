@@ -1,4 +1,4 @@
-import DarkThemeManager from '@/components/DarkThemeManager'
+import { DEFAULT_COLOR_SCHEME } from '@/utils/config'
 import type { Metadata } from 'next'
 import { Karla } from 'next/font/google'
 import './globals.css'
@@ -17,10 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" >
-      <body className={`${font.className} theme-l-fg-1`}>
-        <DarkThemeManager>
-          {children}
-        </DarkThemeManager>
+      <body className={`${font.className} ${DEFAULT_COLOR_SCHEME} theme-l-fg-1`}>
+        {children}
       </body>
     </html>
   )

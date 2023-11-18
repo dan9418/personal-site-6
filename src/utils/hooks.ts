@@ -7,8 +7,10 @@ export const useIsPathname = (href: string) => {
     return href === pathname;
 }
 
-export const usePrefersColorScheme = (): 'light' | 'dark' => {
-    const [mode, setMode] = useState<'light' | 'dark'>(DEFAULT_COLOR_SCHEME);
+export type ColorScheme = 'light' | 'dark';
+
+export const usePrefersColorScheme = (): ColorScheme => {
+    const [mode, setMode] = useState<ColorScheme>(DEFAULT_COLOR_SCHEME);
     useEffect(() => {
         if (FORCE_DEFAULT_COLOR_SCHEME) return;
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
