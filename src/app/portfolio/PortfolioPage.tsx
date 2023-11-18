@@ -1,7 +1,10 @@
 import PageHeader from "@/components/PageHeader";
+import PortfolioProjectList from "@/components/PortfolioProject";
+import PortfolioProject from "@/components/PortfolioProject";
 import SmartLink from "@/components/SmartLink";
-import { GALLERY_IDS } from "@/data/art.data";
+import ART_DATA from "@/data/art.data";
 import { ALBUM_IDS } from "@/data/discography.data";
+import { getIdFromText } from "@/utils/stringUtils";
 
 const PortfolioPage = () => {
     return (
@@ -11,10 +14,16 @@ const PortfolioPage = () => {
                 DISCLAIMER: This page is still under construction!
             </p>
 
+            <h2>Art</h2>
+            <PortfolioProjectList items={ART_DATA.map(gallery => ({
+                title: gallery.name,
+                description: gallery.description,
+                imgSrc: gallery.images[0].path,
+                href: `/portfolio/gallery/${getIdFromText(gallery.name)}/`
+            }))} />
+
             <h2>Discography</h2>
             <ul>{ALBUM_IDS.map(id => <li key={id}><SmartLink href={`/portfolio/album/${id}/`}>{id}</SmartLink></li>)}</ul>
-            <h2>Galleries</h2>
-            <ul>{GALLERY_IDS.map(id => <li key={id}><SmartLink href={`/portfolio/gallery/${id}/`}>{id}</SmartLink></li>)}</ul>
         </>
     )
 }
