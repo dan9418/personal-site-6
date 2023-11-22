@@ -2,7 +2,6 @@ import { IconId } from "@/components/icons/icons";
 import { getIdFromText } from "@/utils/stringUtils";
 import { ILink } from "./links.data";
 
-
 interface ITrack {
   name: string;
   writer?: string;
@@ -60,7 +59,8 @@ const DISCOGRAPHY_DATA: IArtist[] = [
             href: "",
           },
         ],
-        artSrc: "/img/albums/need_not.jpg",
+        artSrc:
+          "/img/graphic-design/album-covers/strange-frontiers/need-not/need-not-front.jpg",
       },
       {
         name: "Silent City",
@@ -92,7 +92,8 @@ const DISCOGRAPHY_DATA: IArtist[] = [
           },
           { iconId: IconId.Lyrics, href: "" },
         ],
-        artSrc: "/img/albums/silent_city.jpg",
+        artSrc:
+          "/img/graphic-design/album-covers/strange-frontiers/silent-city/silent-city-front.jpg",
       },
     ],
   },
@@ -124,7 +125,8 @@ const DISCOGRAPHY_DATA: IArtist[] = [
           },
           { iconId: IconId.Lyrics, href: "" },
         ],
-        artSrc: "/img/albums/peanut_butter_jam.jpg",
+        artSrc:
+          "/img/graphic-design/album-covers/the-vectors/peanut-butter-jam/peanut-butter-jam-front.jpg",
       },
       {
         name: "Songs; And How NOT To Write Them!",
@@ -160,7 +162,8 @@ const DISCOGRAPHY_DATA: IArtist[] = [
             href: "",
           },
         ],
-        artSrc: "/img/albums/songs_and_how_not_to_write_them.jpg",
+        artSrc:
+          "/img/graphic-design/album-covers/the-vectors/songs-and-how-not-to-write-them/songs-and-how-not-to-write-them-front.jpg",
       },
       {
         name: "Yellow Snow",
@@ -183,7 +186,8 @@ const DISCOGRAPHY_DATA: IArtist[] = [
           },
           { iconId: IconId.Lyrics, href: "" },
         ],
-        artSrc: "/img/albums/yellow_snow.jpg",
+        artSrc:
+          "/img/graphic-design/album-covers/the-vectors/yellow-snow/yellow-snow-front.jpg",
       },
     ],
   },
@@ -221,7 +225,8 @@ const DISCOGRAPHY_DATA: IArtist[] = [
           },
           { iconId: IconId.Lyrics, href: "" },
         ],
-        artSrc: "/img/albums/human_architecture.jpg",
+        artSrc:
+          "/img/graphic-design/album-covers/old-projects/human-architecture/human-architecture-front-alt.jpg",
       },
       {
         name: "Out Of Reach",
@@ -259,7 +264,8 @@ const DISCOGRAPHY_DATA: IArtist[] = [
           },
           { iconId: IconId.Lyrics, href: "" },
         ],
-        artSrc: "/img/albums/out_of_reach.jpg",
+        artSrc:
+          "/img/graphic-design/album-covers/old-projects/out-of-reach/out-of-reach-front.jpg",
       },
     ],
   },
@@ -267,6 +273,11 @@ const DISCOGRAPHY_DATA: IArtist[] = [
 
 export default DISCOGRAPHY_DATA;
 
-export const ALBUM_IDS = DISCOGRAPHY_DATA.flatMap(artist => artist.albums.map(album => getIdFromText(album.name)));
+export const ALBUM_IDS = DISCOGRAPHY_DATA.flatMap((artist) =>
+  artist.albums.map((album) => getIdFromText(album.name))
+);
 
-export const getAlbumById = (id: string) => DISCOGRAPHY_DATA.find(artist => artist.albums.find(gallery => getIdFromText(gallery.name) === id))?.albums.find(gallery => getIdFromText(gallery.name) === id);
+export const getAlbumById = (id: string) =>
+  DISCOGRAPHY_DATA.find((artist) =>
+    artist.albums.find((gallery) => getIdFromText(gallery.name) === id)
+  )?.albums.find((gallery) => getIdFromText(gallery.name) === id);
