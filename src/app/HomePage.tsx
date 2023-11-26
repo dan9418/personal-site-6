@@ -93,7 +93,7 @@ const DATA = {
       ),
     },
   ],
-} as const;
+};
 
 const HomePage = () => {
   return (
