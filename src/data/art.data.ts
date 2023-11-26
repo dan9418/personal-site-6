@@ -192,6 +192,54 @@ const ART_DATA: IGallery[] = [
                 path: "/img/art/inktober-2023/31.jpg",
             },
         ],
+    },
+    {
+        name: "Collages",
+        description: "Collages of found materials",
+        images: [
+            {
+                name: "Middle School",
+                year: 2008,
+                caption: "",
+                path: "/img/art/collages/middle-school.jpg",
+            },
+            {
+                name: "High School",
+                year: 2013,
+                caption: "",
+                path: "/img/art/collages/high-school.jpg",
+            },
+            {
+                name: "College",
+                year: 2017,
+                caption: "",
+                path: "/img/art/collages/college.jpg",
+            }
+        ],
+    },
+    {
+        name: "Miscellaneous",
+        description: "Other drawings, paintings, and projects. More to come.",
+        images: [
+            {
+                name: "Swirl",
+                year: 2021,
+                caption: "",
+                path: "/img/art/misc/swirl.png",
+            },
+            {
+                name: "4th Dimensional Log Jammer",
+                year: 2020,
+                caption: "",
+                path: "/img/art/misc/4th-dimensional-log-jammer.png",
+            },
+            {
+                name: "Christmas 2021",
+                year: 2021,
+                caption: "",
+                path: "/img/art/misc/christmas-balls.jpg",
+            }
+        ],
     }
 ];
 
