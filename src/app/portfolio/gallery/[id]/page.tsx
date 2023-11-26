@@ -25,10 +25,11 @@ const Page = ({ params }) => {
         <PageFrame>
             <PageHeader text={name} />
             <p className="my-16 text-center">{description}</p>
-            <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 align-center justify-center items-center">
+            <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 items-center justify-center items-center">
                 {images.map(img => (
-                    <li key={img.path}>
-                        <Image src={img.path} alt={img.name} width={256} height={256} />
+                    <li key={img.path} className="flex items-center justify-center flex-col gap-1">
+                        <Image src={img.path} alt={img.name} width={256} height={256} className="rounded" />
+                        <h3 className="font-bold text-center mb-2">{img.name}</h3>
                     </li>
                 ))}
             </ul>
