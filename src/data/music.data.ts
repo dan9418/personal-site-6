@@ -22,7 +22,7 @@ interface IArtist {
   albums: IAlbum[];
 }
 
-const DISCOGRAPHY_DATA: IArtist[] = [
+const MUSIC_DATA: IArtist[] = [
   {
     name: "Strange Frontiers",
     links: [
@@ -271,13 +271,13 @@ const DISCOGRAPHY_DATA: IArtist[] = [
   },
 ];
 
-export default DISCOGRAPHY_DATA;
+export default MUSIC_DATA;
 
-export const ALBUM_IDS = DISCOGRAPHY_DATA.flatMap((artist) =>
+export const ALBUM_IDS = MUSIC_DATA.flatMap((artist) =>
   artist.albums.map((album) => getIdFromText(album.name))
 );
 
 export const getAlbumById = (id: string) =>
-  DISCOGRAPHY_DATA.find((artist) =>
+  MUSIC_DATA.find((artist) =>
     artist.albums.find((gallery) => getIdFromText(gallery.name) === id)
   )?.albums.find((gallery) => getIdFromText(gallery.name) === id);

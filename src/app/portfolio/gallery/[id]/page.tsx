@@ -1,6 +1,6 @@
 import PageFrame from "@/components/PageFrame";
 import PageHeader from "@/components/PageHeader";
-import { GALLERY_IDS, getGalleryById } from "@/data/art.data";
+import { GALLERY_IDS, getGalleryById } from "@/data/garphic-design.data";
 import { Metadata } from 'next';
 import Image from "next/image";
 

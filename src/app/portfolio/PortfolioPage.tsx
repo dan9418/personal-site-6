@@ -1,7 +1,7 @@
 import PageHeader from "@/components/PageHeader";
 import PortfolioProjectList from "@/components/PortfolioProject";
-import ART_DATA from "@/data/art.data";
-import DISCOGRAPHY_DATA from "@/data/discography.data";
+import GRAPHIC_DESIGN_DATA from "@/data/garphic-design.data";
+import MUSIC_DATA from "@/data/music.data";
 import { getIdFromText } from "@/utils/stringUtils";
 
 const PortfolioPage = () => {
@@ -13,7 +13,7 @@ const PortfolioPage = () => {
             </p>
 
             <PageHeader text="Graphic Design" level="h2" className="mb-4" />
-            <PortfolioProjectList items={ART_DATA.map(gallery => ({
+            <PortfolioProjectList items={GRAPHIC_DESIGN_DATA.map(gallery => ({
                 title: gallery.name,
                 description: gallery.description,
                 imgSrc: gallery.images[0].path,
@@ -21,7 +21,7 @@ const PortfolioPage = () => {
             }))} />
 
             <PageHeader text="Music" level="h2" className="mt-8 mb-4" />    
-            {DISCOGRAPHY_DATA.map(artist => (
+            {MUSIC_DATA.map(artist => (
                 <>
                     <PageHeader text={artist.name} level="h3" className="mb-4"/>
                     <PortfolioProjectList items={artist.albums.map(album => ({
