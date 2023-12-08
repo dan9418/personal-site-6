@@ -60,7 +60,7 @@ const MUSIC_DATA: IArtist[] = [
           },
         ],
         artSrc:
-          "/img/graphic-design/album-covers/strange-frontiers/need-not/need-not-front.jpg",
+          "/img/art/album-covers/strange-frontiers/need-not/need-not-front.jpg",
       },
       {
         name: "Silent City",
@@ -93,7 +93,7 @@ const MUSIC_DATA: IArtist[] = [
           { iconId: IconId.Lyrics, href: "" },
         ],
         artSrc:
-          "/img/graphic-design/album-covers/strange-frontiers/silent-city/silent-city-front.jpg",
+          "/img/art/album-covers/strange-frontiers/silent-city/silent-city-front.jpg",
       },
     ],
   },
@@ -126,7 +126,7 @@ const MUSIC_DATA: IArtist[] = [
           { iconId: IconId.Lyrics, href: "" },
         ],
         artSrc:
-          "/img/graphic-design/album-covers/the-vectors/peanut-butter-jam/peanut-butter-jam-front.jpg",
+          "/img/art/album-covers/the-vectors/peanut-butter-jam/peanut-butter-jam-front.jpg",
       },
       {
         name: "Songs; And How NOT To Write Them!",
@@ -163,7 +163,7 @@ const MUSIC_DATA: IArtist[] = [
           },
         ],
         artSrc:
-          "/img/graphic-design/album-covers/the-vectors/songs-and-how-not-to-write-them/songs-and-how-not-to-write-them-front.jpg",
+          "/img/art/album-covers/the-vectors/songs-and-how-not-to-write-them/songs-and-how-not-to-write-them-front.jpg",
       },
       {
         name: "Yellow Snow",
@@ -187,7 +187,7 @@ const MUSIC_DATA: IArtist[] = [
           { iconId: IconId.Lyrics, href: "" },
         ],
         artSrc:
-          "/img/graphic-design/album-covers/the-vectors/yellow-snow/yellow-snow-front.jpg",
+          "/img/art/album-covers/the-vectors/yellow-snow/yellow-snow-front.jpg",
       },
     ],
   },
@@ -226,7 +226,7 @@ const MUSIC_DATA: IArtist[] = [
           { iconId: IconId.Lyrics, href: "" },
         ],
         artSrc:
-          "/img/graphic-design/album-covers/old-projects/human-architecture/human-architecture-front-alt.jpg",
+          "/img/art/album-covers/old-projects/human-architecture/human-architecture-front-alt.jpg",
       },
       {
         name: "Out Of Reach",
@@ -265,7 +265,7 @@ const MUSIC_DATA: IArtist[] = [
           { iconId: IconId.Lyrics, href: "" },
         ],
         artSrc:
-          "/img/graphic-design/album-covers/old-projects/out-of-reach/out-of-reach-front.jpg",
+          "/img/art/album-covers/old-projects/out-of-reach/out-of-reach-front.jpg",
       },
     ],
   },

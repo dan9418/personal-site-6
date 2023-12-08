@@ -1,7 +1,6 @@
 import PageFrame from "@/components/PageFrame";
 import PageHeader from "@/components/PageHeader";
 import ART_DATA from "@/data/art.data";
-import GRAPHIC_DESIGN_DATA from "@/data/graphic-design.data";
 import { getGalleryById } from "@/utils/dataUtils";
 import { getIdFromText } from "@/utils/stringUtils";
 import { Metadata } from 'next';
@@ -12,13 +11,13 @@ export const metadata: Metadata = {
     description: '',
 }
 
-export const generateStaticParams = () => GRAPHIC_DESIGN_DATA.map((gallery) =>
+export const generateStaticParams = () => ART_DATA.map((gallery) =>
     ({ id: getIdFromText(gallery.name) })
 );
 
 // @ts-ignore
 const Page = ({ params }) => {
-    const gallery = getGalleryById([...GRAPHIC_DESIGN_DATA, ...ART_DATA], params.id);
+    const gallery = getGalleryById(ART_DATA, params.id);
     if (!gallery) return null;
     const { name, description, images } = gallery;
     return (
