@@ -31,7 +31,7 @@ const LinksList: React.FC<{ links: ILink[], isDark?: boolean }> = ({ links, isDa
 
 export const LinkCategoriesList: React.FC<{ categories?: ILinkCategory[], x?: boolean, isDark?: boolean }> =
     ({ categories = CATEGORY_LINKS, x = false, isDark = false }) => {
-        const className = x ? 'lg:flex w-full justify-center gap-16' : '';
+        const className = x ? 'desktop:flex w-full justify-center gap-16' : '';
         return (
             <ul className={className}>
                 {categories.map(cat => {

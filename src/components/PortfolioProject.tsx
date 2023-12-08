@@ -15,7 +15,13 @@ const PortfolioProject: FC<PortfolioProjectProps> = ({ title, description, imgSr
         <SmartLink href={href} className="block p-4 hover:bg-slate-100 rounded-lg">
             <div className="grid grid-cols-[180px_auto] gap-4 items-start">
                 <div>
-                    <Image src={imgSrc} alt={title} width={180} height={180} />
+                    <Image 
+                    src={imgSrc} 
+                    alt={title} 
+                    width={180} 
+                    height={180} 
+                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw" 
+                    />
                 </div>
                 <div>
                     <PageHeader text={title} level='h4' />

@@ -10,7 +10,7 @@ import { IconId } from "./icons/icons"
 
 const NavLink: React.FC<{ href: string, text?: string, iconId?: IconId }> = ({ href, text, iconId }) => {
     const isPathname = useIsPathname(href);
-    let className = "block h-full hover:theme-d-bg-1 inline-flex justify-center items-center text-sm lg:text-base px-2 lg:px-4 transition-colors duration-200";
+    let className = "block h-full hover:theme-d-bg-1 inline-flex justify-center items-center text-sm desktop:text-base px-2 desktop:px-4 transition-colors duration-200";
     if (isPathname) {
         className = `${className} theme-d-bg-1`
     }
@@ -30,11 +30,11 @@ const Nav: React.FC = () => {
             <nav className="fixed top-0 left-0 right-0 h-12 theme-nav flex justify-center items-center shadow-xl">
                 <div className="w-full h-full max-w-5xl relative flex flex-nowrap">
                     {NAV_LINKS.map(link => <NavLink key={link.text} {...link} iconId={undefined} />)}
-                    <div className="absolute right-0 top-0 h-12 hidden lg:block">
+                    <div className="absolute right-0 top-0 h-12 hidden desktop:block">
                         {CONTACT_LINKS.map(link => <NavLink key={link.text} {...link} text="" />)}
                     </div>
                 </div>
-                <button className="h-12 w-12 flex justify-center items-center fixed top-0 right-0 z-10 lg:hidden"
+                <button className="h-12 w-12 flex justify-center items-center fixed top-0 right-0 z-10 desktop:hidden"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                     <Icon iconId={IconId.Menu} className="h-6 w-6 theme-d-fg-1" />
@@ -42,7 +42,7 @@ const Nav: React.FC = () => {
             </nav>
             {isMenuOpen &&
                 <section
-                    className="h-full w-80 fixed right-0 top-12 theme-l-bg-2 p-4 shadow lg:hidden">
+                    className="h-full w-80 fixed right-0 top-12 theme-l-bg-2 p-4 shadow desktop:hidden">
                     <LinkCategoriesList />
                 </section>
             }

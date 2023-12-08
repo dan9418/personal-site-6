@@ -17,14 +17,14 @@ const Row: React.FC<{
   title: string;
 }> = ({ imgSrc, imgAlt, text, flip, linkHref, linkText, title }) => {
   return (
-    <div className="mt-4 lg:mt-8">
+    <div className="mt-4 desktop:mt-8">
       <h2 className={`text-2xl font-bold pb-2 mb-4 border-b theme-l-border`}>
         {title}
       </h2>
-      <div className="flex flex-col gap-4 justify-center align-center lg:grid grid-cols-[180px_auto] gap-6">
+      <div className="flex flex-col gap-4 justify-center align-center desktop:grid grid-cols-[180px_auto] gap-6">
         <div className="">
           <Image
-            className="rounded m-auto lg:m-0"
+            className="rounded m-auto desktop:m-0"
             src={imgSrc}
             alt={imgAlt}
             width={180}
@@ -32,7 +32,7 @@ const Row: React.FC<{
           />
         </div>
         <div>
-          <p className="text-sm lg:text-base text-center lg:text-left">
+          <p className="text-sm desktop:text-base text-center desktop:text-left">
             {text}
           </p>
           <Link

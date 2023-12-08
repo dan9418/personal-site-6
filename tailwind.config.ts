@@ -7,8 +7,13 @@ const config: Config = {
   ],
   theme: {
     extend: {},
+    screens: {
+      'tablet': '768px',
+      'desktop': '1024px',
+    },
   },
   plugins: [],
   darkMode: 'class',
 }
+
 export default config
