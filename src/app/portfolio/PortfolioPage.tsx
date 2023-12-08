@@ -13,7 +13,7 @@ const PortfolioPage = () => {
                 DISCLAIMER: This page is still under construction!
             </p>
 
-            <PageHeader text="Graphic Design" level="h2" className="mb-4" />
+            <PageHeader text="Graphic Design" level="h2" className="pb-2 my-4 border-b-2 theme-l-border" />
             <PortfolioProjectList items={GRAPHIC_DESIGN_DATA.map(gallery => ({
                 title: gallery.name,
                 description: gallery.description,
@@ -21,7 +21,7 @@ const PortfolioPage = () => {
                 href: `/portfolio/gallery/${getIdFromText(gallery.name)}/`
             }))} />
 
-            <PageHeader text="Art" level="h2" className="mb-4" />
+            <PageHeader text="Art" level="h2" className="pb-2 my-4 border-b-2 theme-l-border" />
             <PortfolioProjectList items={ART_DATA.map(gallery => ({
                 title: gallery.name,
                 description: gallery.description,
@@ -29,7 +29,7 @@ const PortfolioPage = () => {
                 href: `/portfolio/gallery/${getIdFromText(gallery.name)}/`
             }))} />
 
-            <PageHeader text="Music" level="h2" className="mt-8 mb-4" />
+            <PageHeader text="Music" level="h2" className="pb-2 my-4 border-b-2 theme-l-border" />
             {MUSIC_DATA.map(artist => (
                 <>
                     <PageHeader text={artist.name} level="h3" className="mb-4" />
