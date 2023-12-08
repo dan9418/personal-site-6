@@ -1,26 +1,5 @@
 import { IconId } from "@/components/icons/icons";
-import { getIdFromText } from "@/utils/stringUtils";
-import { ILink } from "./links.data";
-
-interface ITrack {
-  name: string;
-  writer?: string;
-}
-
-interface IAlbum {
-  name: string;
-  releaseDate: string;
-  remasterDate?: string;
-  artSrc: string;
-  links: ILink[];
-  tracks: ITrack[];
-}
-
-interface IArtist {
-  name: string;
-  links: ILink[];
-  albums: IAlbum[];
-}
+import { IArtist } from "@/utils/dataUtils";
 
 const MUSIC_DATA: IArtist[] = [
   {
@@ -192,7 +171,7 @@ const MUSIC_DATA: IArtist[] = [
     ],
   },
   {
-    name: "Other",
+    name: "Old Projects",
     links: [],
     albums: [
       {
@@ -272,12 +251,3 @@ const MUSIC_DATA: IArtist[] = [
 ];
 
 export default MUSIC_DATA;
-
-export const ALBUM_IDS = MUSIC_DATA.flatMap((artist) =>
-  artist.albums.map((album) => getIdFromText(album.name))
-);
-
-export const getAlbumById = (id: string) =>
-  MUSIC_DATA.find((artist) =>
-    artist.albums.find((gallery) => getIdFromText(gallery.name) === id)
-  )?.albums.find((gallery) => getIdFromText(gallery.name) === id);

@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 }
 
 export const generateStaticParams = () => ART_DATA.map((gallery) =>
-    ({ id: getIdFromText(gallery.name) })
+    ({ galleryId: getIdFromText(gallery.name) })
 );
 
 // @ts-ignore
 const Page = ({ params }) => {
-    const gallery = getGalleryById(ART_DATA, params.id);
+    const gallery = getGalleryById(ART_DATA, params.galleryId);
     if (!gallery) return null;
     const { name, description, images } = gallery;
     return (

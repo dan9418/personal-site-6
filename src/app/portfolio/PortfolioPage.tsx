@@ -17,21 +17,15 @@ const PortfolioPage = () => {
                 title: gallery.name,
                 description: gallery.description,
                 imgSrc: gallery.images[0].path,
-                href: `/portfolio/gallery/${getIdFromText(gallery.name)}/`
+                href: `/portfolio/art/${getIdFromText(gallery.name)}/`
             }))} />
 
             <PageHeader text="Music" level="h2" className="pb-2 my-4 border-b-2 theme-l-border" />
-            {MUSIC_DATA.map(artist => (
-                <>
-                    <PageHeader text={artist.name} level="h3" className="mb-4" />
-                    <PortfolioProjectList items={artist.albums.map(album => ({
-                        title: album.name,
-                        description: album.releaseDate,
-                        imgSrc: album.artSrc,
-                        href: `/portfolio/album/${getIdFromText(album.name)}/`
-                    }))} />
-                </>
-            ))}
+            <PortfolioProjectList items={MUSIC_DATA.map(artist => ({
+                title: artist.name,
+                imgSrc: artist.albums[0].artSrc,
+                href: `/portfolio/music/${getIdFromText(artist.name)}/`
+            }))} />
         </>
     )
 }

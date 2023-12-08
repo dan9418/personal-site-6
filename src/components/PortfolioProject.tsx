@@ -5,7 +5,7 @@ import PageHeader from "./PageHeader";
 
 interface PortfolioProjectProps {
     title: string;
-    description: string;
+    description?: string;
     imgSrc: string;
     href: string;
 }
@@ -26,12 +26,13 @@ const PortfolioProject: FC<PortfolioProjectProps> = ({ title, description, imgSr
                 </div>
                 <div>
                     <PageHeader text={title} level='h4' />
-                    <p className="text-sm tablet:text-lg">
-                        {description}
-                    </p>
+                    {description && (
+                        <p className="text-sm tablet:text-lg">
+                            {description}
+                        </p>
+                    )}
                 </div>
             </div>
-
         </SmartLink>
     )
 }
