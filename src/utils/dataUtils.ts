@@ -11,8 +11,8 @@ export interface IGalleryImage {
 export interface IGallery {
     name: string;
     description: string;
-    images: IGalleryImage[];
     thumnbnailPath: string;
+    images: IGalleryImage[];
 }
 
 export const getGalleryById = (data: IGallery[], id: string): IGallery | undefined =>
@@ -32,10 +32,20 @@ export interface IAlbum {
     tracks: ITrack[];
 }
 
+export interface IOtherTrack {
+    title: string;
+    compilation: string;
+    link: string;
+    thumnbnailPath: string;
+}
+
 export interface IArtist {
     name: string;
-    links: ILink[];
+    description: string;
+    thumnbnailPath: string;
     albums: IAlbum[];
+    links: ILink[];
+    otherTracks?: IOtherTrack[]
 }
 
 export const getArtistById = (data: IArtist[], id: string): IArtist | undefined =>

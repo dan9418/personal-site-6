@@ -23,7 +23,8 @@ const PortfolioPage = () => {
             <PageHeader text="Music" level="h2" className="pb-2 my-4 border-b-2 theme-l-border" />
             <PortfolioProjectList items={MUSIC_DATA.map(artist => ({
                 title: artist.name,
-                imgSrc: artist.albums[0].artSrc,
+                description: artist.description,
+                imgSrc: artist.thumnbnailPath,
                 href: `/portfolio/music/${getIdFromText(artist.name)}/`
             }))} />
         </>
