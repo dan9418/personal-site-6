@@ -37,7 +37,7 @@ export const LinkCategoriesList: React.FC<{ categories?: ILinkCategory[], x?: bo
                 {categories.map(cat => {
                     return (
                         <>
-                            <li>
+                            <li key={cat.name}>
                                 <h3 className={`border-b ${isDark ? 'theme-d-border' : 'theme-l-border'} my-2 pb-1 font-bold`}>{cat.name}</h3>
                                 <LinksList links={cat.links} isDark={isDark} />
                             </li>

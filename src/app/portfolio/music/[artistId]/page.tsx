@@ -1,3 +1,4 @@
+import Disclaimer from "@/components/Disclaimer";
 import MusicLinksLinks from "@/components/MusicLinksList";
 import PageFrame from "@/components/PageFrame";
 import PageHeader from "@/components/PageHeader";
@@ -46,6 +47,7 @@ const Page = ({ params }) => {
     return (
         <PageFrame>
             <PageHeader text={artist.name} />
+            <Disclaimer />
             {artist.albums.map(album => <Album key={album.name} album={album} />)}
         </PageFrame>
     )

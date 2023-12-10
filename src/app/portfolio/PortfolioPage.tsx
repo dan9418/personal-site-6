@@ -1,3 +1,4 @@
+import Disclaimer from "@/components/Disclaimer";
 import PageHeader from "@/components/PageHeader";
 import PortfolioProjectList from "@/components/PortfolioProject";
 import ART_DATA from "@/data/art.data";
@@ -8,9 +9,8 @@ const PortfolioPage = () => {
     return (
         <>
             <PageHeader text='Creative Portfolio' />
-            <p className="bg-stone-200 rounded-lg border border-red-500 p-2 m-4 font-bold text-center text-sm tablet:text-md">
-                DISCLAIMER: This page is still under construction!
-            </p>
+            
+            <Disclaimer />
 
             <PageHeader text="Art" level="h2" className="pb-2 my-4 border-b-2 theme-l-border" />
             <PortfolioProjectList items={ART_DATA.map(gallery => ({
