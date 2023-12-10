@@ -23,9 +23,9 @@ const Page = ({ params }) => {
     const { name, description, images } = gallery;
     return (
         <PageFrame>
+            <Disclaimer />
             <PageHeader text={name} />
             <p className="my-8 text-center">{description}</p>
-            <Disclaimer />
             <ul className="grid tablet:grid-cols-2 desktop:grid-cols-3 gap-4 items-center justify-center items-center">
                 {images.map(img => (
                     <li key={img.path} className="flex items-center justify-center flex-col gap-1">

@@ -8,9 +8,9 @@ import { getIdFromText } from "@/utils/stringUtils";
 const PortfolioPage = () => {
     return (
         <>
-            <PageHeader text='Creative Portfolio' />
-            
             <Disclaimer />
+            
+            <PageHeader text='Creative Portfolio' />
 
             <PageHeader text="Art" level="h2" className="pb-2 my-4 border-b-2 theme-l-border" />
             <PortfolioProjectList items={ART_DATA.map(gallery => ({
