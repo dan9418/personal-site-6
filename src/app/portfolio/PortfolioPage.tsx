@@ -16,7 +16,7 @@ const PortfolioPage = () => {
             <PortfolioProjectList items={ART_DATA.map(gallery => ({
                 title: gallery.name,
                 description: gallery.description,
-                imgSrc: gallery.images[0].path,
+                imgSrc: gallery.thumnbnailPath,
                 href: `/portfolio/art/${getIdFromText(gallery.name)}/`
             }))} />
 

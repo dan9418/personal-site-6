@@ -12,6 +12,7 @@ export interface IGallery {
     name: string;
     description: string;
     images: IGalleryImage[];
+    thumnbnailPath: string;
 }
 
 export const getGalleryById = (data: IGallery[], id: string): IGallery | undefined =>

@@ -3,6 +3,7 @@ import { IGallery } from "@/utils/dataUtils";
 const ALBUMS: IGallery = {
     name: "Album Covers",
     description: "Artwork for various musical projects",
+    thumnbnailPath: "/img/art/album-covers/strange-frontiers/sketches-from-sacramento/sketches-from-sacramento-front.jpg",
     images: [
         {
             name: "Sketches From Sacramento (Front)",
@@ -87,7 +88,8 @@ const ALBUMS: IGallery = {
 
 const SNAPCHAT: IGallery = {
     name: "Snapchat Filters",
-    description: "Some Snapchat geofilters I designed in college",
+    description: "Some Snapchat geofilters",
+    thumnbnailPath: "/img/art/snapchat-filters/chesterfield.png",
     images: [
         // 4
         {
@@ -120,6 +122,7 @@ const SNAPCHAT: IGallery = {
 const JUST_FOR_FUN: IGallery = {
     name: "Just For Fun",
     description: "I don't take myself too seriously",
+    thumnbnailPath: "/img/art/just-for-fun/ceo.jpg",
     images: [
         //14
         {
@@ -218,6 +221,7 @@ const JUST_FOR_FUN: IGallery = {
 const SHIRTS: IGallery = {
     name: "T-Shirts",
     description: "Some shirts I designed in college",
+    thumnbnailPath: "/img/art/t-shirts/the-panther-pitt.jpg",
     images: [
         // 5
         {
@@ -279,7 +283,8 @@ const SHIRTS: IGallery = {
 
 const TATOOS: IGallery = {
     name: "Tattoos",
-    description: "Some tattoos I designed",
+    description: "Tattoos I designed for myself and others",
+    thumnbnailPath: "/img/art/tattoos/globe.png",
     images: [
         // 4
         {
@@ -330,6 +335,7 @@ const TATOOS: IGallery = {
 const INKTOBER: IGallery = {
     name: "Inktober 2023",
     description: "Daily doodles for the #inktober challenge",
+    thumnbnailPath: "/img/art/inktober-2023/19.jpg",
     images: [
         {
             name: "1. Dream",
@@ -523,6 +529,7 @@ const INKTOBER: IGallery = {
 const COLLAGES: IGallery = {
     name: "Collages",
     description: "Collages of found materials",
+    thumnbnailPath: "/img/art/collages/high-school.jpg",
     images: [
         {
             name: "Middle School",
@@ -548,6 +555,7 @@ const COLLAGES: IGallery = {
 const MISC: IGallery = {
     name: "Miscellaneous",
     description: "Other drawings, paintings, and projects. More to come.",
+    thumnbnailPath: "/img/art/misc/swirl.png",
     images: [
         {
             name: "Swirl",

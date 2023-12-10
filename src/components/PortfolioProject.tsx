@@ -27,7 +27,7 @@ const PortfolioProject: FC<PortfolioProjectProps> = ({ title, description, imgSr
                 <div className="">
                     <PageHeader text={title} level='h4' className="mt-2" />
                     {description && (
-                        <p className="text-sm  theme-l-fg-2">
+                        <p className="text-sm theme-l-fg-2">
                             {description}
                         </p>
                     )}
