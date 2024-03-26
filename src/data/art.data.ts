@@ -254,18 +254,18 @@ const SHIRTS: IGallery = {
             caption: "",
             path: "/img/art/t-shirts/the-panther-pitt.jpg",
         },
-        {
-            name: "Pitt Sailing",
-            year: 2016,
-            caption: "",
-            path: "/img/art/t-shirts/pitt-sailing.jpg",
-        },
-        {
-            name: "Pitt Anthropology",
-            year: 2016,
-            caption: "",
-            path: "/img/art/t-shirts/pitt-anthropology.jpg",
-        },
+        // {
+        //     name: "Pitt Sailing",
+        //     year: 2016,
+        //     caption: "",
+        //     path: "/img/art/t-shirts/pitt-sailing.jpg",
+        // },
+        // {
+        //     name: "Pitt Anthropology",
+        //     year: 2016,
+        //     caption: "",
+        //     path: "/img/art/t-shirts/pitt-anthropology.jpg",
+        // },
         {
             name: "The BANDits",
             year: 2013,
