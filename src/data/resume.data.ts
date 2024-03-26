@@ -9,10 +9,10 @@ const TECH_SKILLS: TechSkillsItem[] = [
     {
         category: 'Languages',
         items: [
-            'JavaScript es6',
-            'TypeScript 6',
-            'HTML5',
-            'CSS3',
+            'JavaScript',
+            'TypeScript',
+            'HTML',
+            'CSS',
             'Node',
             'SQL',
             'C#',
@@ -23,15 +23,15 @@ const TECH_SKILLS: TechSkillsItem[] = [
     {
         category: 'Libraries',
         items: [
-            'React 18',
-            'Next 14',
+            'React',
+            'Next',
             'Gatsby',
             'Styled Components',
             'Tailwind CSS',
-            'Redux',
             'Google Analytics',
             'Formik',
-            'Recoil',
+            'Zustand',
+            'Redux',
             'Misc Unit Testing',
         ]
     },
@@ -48,7 +48,7 @@ const TECH_SKILLS: TechSkillsItem[] = [
             'Edge Servers (Fastly)',
             'Error Tracking (Sentry)',
             'CI/CD (AWS, Azure)',
-            'NoSQL',
+            'Live Streaming Video',
         ]
     },
     {
@@ -58,11 +58,12 @@ const TECH_SKILLS: TechSkillsItem[] = [
             'Jira',
             'Sentry',
             'Photoshop',
-            'npm / yarn',
             'Postman',
+            'yarn (classic/modern)',
+            'Git',
+            'npm',
             'VS Code',
             'Visual Studio',
-            'Git',
         ]
     }
 ]
@@ -82,15 +83,15 @@ const WORK_EXP: WorkExpItem[] = [
         company: 'CBS Sports, MaxPreps',
         duration: 'December 2019 - Present',
         position: 'Senior Software Engineer',
-        location: 'El Dorado Hills, CA + Remote',
+        location: 'El Dorado Hills, CA (Remote)',
         items: [
-            'Leads the frontend team effort to modularize and modernize the legacy MaxPreps site architecture',
-            'Implements React pages utilizing Next.js for server-side rendering and SEO optimization',
-            'Builds out robust, responsive component libraries using styled-components',
-            'Architects solutions for ad, tracking, and caching needs',
-            'Supports complex routing requirements and URL-rewriting patterns',
+            'Leads the web frontend team in supporting product needs and maintaining a scalable, modern codebase',
             'Facilitates communication between stakeholders in tech, product, & design on distributed Agile team',
             'Manages junior developers and presents technical material to a wide audience',
+            'Implements React pages utilizing Next.js for server-side rendering and SEO optimization',
+            'Builds robust, responsive component libraries using styled-components',
+            'Designs integrations for ads, tracking, error reporting, and caching',
+            'Supports complex routing requirements and URL-rewriting patterns',
         ]
     },
     {
@@ -136,9 +137,9 @@ const EDUCATION: WorkExpItem = {
 // PROJECTS
 
 export const PROJECTS: string[] = [
-    'Created Play What, an educational music theory website and toolkit (in Beta)',
+    'Created \'Play What,\' an educational music theory website and toolkit (in Beta)',
     'Developed this personal website using the Next App Router and Tailwind CSS',
-    'Volunteer program coordinator at nonprofit music instrument lending library',
+    //'Volunteer program coordinator at nonprofit music instrument lending library',
     'Eagle Scout',
 ]
 

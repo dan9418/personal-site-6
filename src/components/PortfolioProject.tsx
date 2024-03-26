@@ -12,7 +12,7 @@ interface PortfolioProjectProps {
 
 const PortfolioProject: FC<PortfolioProjectProps> = ({ title, description, imgSrc, href }) => {
     return (
-        <SmartLink href={href} className="inline-block h-full p-2 tablet:p-4 hover:bg-slate-100 rounded-lg border theme-d-border mb-8">
+        <SmartLink href={href} className="inline-block h-full p-2 tablet:p-4 bg-white hover:bg-slate-100 rounded-lg border theme-d-border mb-8">
             <div className="">
                 <div className="h-[256px] w-[256px] overflow-hidden bg-white rounded flex items-center justify-center">
                     <Image

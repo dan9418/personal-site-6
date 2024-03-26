@@ -1,25 +1,59 @@
 import { IconId } from "@/components/icons/icons";
 import { IArtist } from "@/utils/dataUtils";
+import { LINK_APPLE_MUSIC, LINK_BANDCAMP, LINK_INSTAGRAM, LINK_SPOTIFY } from "./links.data";
 
 const STRANGE_FRONTIERS: IArtist = {
   name: "Strange Frontiers",
-  description: "My current multimedia solo project",
-  thumnbnailPath: "/img/art/album-covers/strange-frontiers/silent-city/silent-city-front.jpg",
+  description: "Multimedia solo project",
+  thumnbnailPath: "/img/photography/headshots/studio-square.jpg",
   links: [
     {
+      iconId: IconId.Spotify,
+      href: LINK_SPOTIFY.href,
+    },
+    {
+      iconId: IconId.Music,
+      href: LINK_APPLE_MUSIC.href,
+    },
+    {
       iconId: IconId.Bandcamp,
-      href: "https://strangefrontiers.bandcamp.com/",
+      href: LINK_BANDCAMP.href,
     },
     {
       iconId: IconId.Instagram,
-      href: "https://www.instagram.com/strangefrontiers/",
+      href: LINK_INSTAGRAM.href,
     },
+    // {
+    //   iconId: 'TikTok',
+    //   href: LINK_TIK_TOK.href,
+    // },
     {
       iconId: IconId.YouTube,
       href: "https://www.youtube.com/channel/UCyq0-Fr2jM-GrbTB-SKOSkA",
     },
   ],
   albums: [
+    {
+      name: "Sketches From Sacramento",
+      releaseDate: "8/5/22",
+      tracks: [
+        { name: "Paradise" },
+        { name: "It's Real" },
+        { name: "Love Letters of the 21st Century" },
+        { name: "Born Strangers" },
+        { name: "Waiting" },
+        { name: "Fortune" },
+        { name: "(The View From) The Third Rock (From The Sun)" },
+      ],
+      links: [
+        {
+          iconId: IconId.Bandcamp,
+          href: "https://strangefrontiers.bandcamp.com/album/sketches-from-sacramento",
+        },
+      ],
+      artSrc:
+        "/img/art/album-covers/strange-frontiers/sketches-from-sacramento/sketches-from-sacramento-front.jpg",
+    },
     {
       name: "Need Not",
       releaseDate: "3/30/18",
@@ -34,10 +68,10 @@ const STRANGE_FRONTIERS: IArtist = {
           iconId: IconId.Bandcamp,
           href: "https://strangefrontiers.bandcamp.com/album/need-not",
         },
-        {
-          iconId: IconId.Lyrics,
-          href: "",
-        },
+        // {
+        //   iconId: IconId.Lyrics,
+        //   href: "",
+        // },
       ],
       artSrc:
         "/img/art/album-covers/strange-frontiers/need-not/need-not-front.jpg",
@@ -62,15 +96,15 @@ const STRANGE_FRONTIERS: IArtist = {
           iconId: IconId.Bandcamp,
           href: "https://strangefrontiers.bandcamp.com/album/silent-city",
         },
-        {
-          iconId: IconId.SoundCloud,
-          href: "https://soundcloud.com/strangefrontiers/sets/silent-city",
-        },
-        {
-          iconId: IconId.YouTube,
-          href: "https://www.youtube.com/watch?v=BdZc8xkQArw&feature=youtu.be",
-        },
-        { iconId: IconId.Lyrics, href: "" },
+        // {
+        //   iconId: IconId.SoundCloud,
+        //   href: "https://soundcloud.com/strangefrontiers/sets/silent-city",
+        // },
+        // {
+        //   iconId: IconId.YouTube,
+        //   href: "https://www.youtube.com/watch?v=BdZc8xkQArw&feature=youtu.be",
+        // },
+        // { iconId: IconId.Lyrics, href: "" },
       ],
       artSrc:
         "/img/art/album-covers/strange-frontiers/silent-city/silent-city-front.jpg",
@@ -78,12 +112,38 @@ const STRANGE_FRONTIERS: IArtist = {
   ],
 };
 
-//const JONAH: IArtist = 
+const JONAH: IArtist =  {
+  name: "Jonah!",
+  description: "Grungy slacker rock",
+  thumnbnailPath: "/img/temp/jonah.jpg",
+  links: [],
+  albums: [
+    {
+      name: "Crooked Spine",
+      releaseDate: "3/29/24",
+      tracks: [
+        { name: "Sister" },
+        { name: "Airhead" },
+        { name: "Get Stuck" },
+        { name: "My Whole Life" },
+        { name: "Rules Like Dogs" },
+      ],
+      links: [
+        {
+          iconId: IconId.Bandcamp,
+          href: "https://jonahmakesmusic.bandcamp.com/album/crooked-spine",
+        },
+      ],
+      artSrc:
+        "/img/temp/crooked_spine.jpg",
+    }
+  ],
+}
 
 const THE_VECTORS: IArtist = {
   name: "The Vectors",
-  description: "My comedic ska band from college",
-  thumnbnailPath: "/img/art/album-covers/the-vectors/peanut-butter-jam/peanut-butter-jam-front.jpg",
+  description: "College ska with a nerdy sense of humor",
+  thumnbnailPath: "/img/temp/vectors.jpg",
   links: [
     {
       iconId: IconId.SoundCloud,
@@ -260,6 +320,7 @@ const OLD_PROJECTS: IArtist = {
 
 const MUSIC_DATA: IArtist[] = [
   STRANGE_FRONTIERS,
+  JONAH,
   THE_VECTORS,
   OLD_PROJECTS
 ];
