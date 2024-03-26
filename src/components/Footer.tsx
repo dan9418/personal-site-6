@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             <address className="text-xs pt-8 flex flex-col justify-center items-center">
                 <p>Dan Bednarczyk</p>
                 <p>3/25/24</p>
-                <p>v0.1.0</p>
+                <p>v0.1.1</p>
             </address>
         </footer>
     )
