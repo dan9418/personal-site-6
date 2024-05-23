@@ -1,10 +1,15 @@
 import { IconId } from "@/components/icons/icons";
 import { IArtist } from "@/utils/dataUtils";
-import { LINK_APPLE_MUSIC, LINK_BANDCAMP, LINK_INSTAGRAM, LINK_SPOTIFY } from "./links.data";
+import {
+  LINK_APPLE_MUSIC,
+  LINK_BANDCAMP,
+  LINK_INSTAGRAM,
+  LINK_SPOTIFY,
+} from "./links.data";
 
-const STRANGE_FRONTIERS: IArtist = {
-  name: "Strange Frontiers",
-  description: "Multimedia solo project",
+const DAN_BEDNARCZYK: IArtist = {
+  name: "Dan Bednarczyk",
+  description: "Solo work",
   thumnbnailPath: "/img/photography/headshots/studio-square.jpg",
   links: [
     {
@@ -48,11 +53,11 @@ const STRANGE_FRONTIERS: IArtist = {
       links: [
         {
           iconId: IconId.Bandcamp,
-          href: "https://strangefrontiers.bandcamp.com/album/sketches-from-sacramento",
+          href: "https://dan.bednarczyk.bandcamp.com/album/sketches-from-sacramento",
         },
       ],
       artSrc:
-        "/img/art/album-covers/strange-frontiers/sketches-from-sacramento/sketches-from-sacramento-front.jpg",
+        "/img/art/album-covers/dan-bednarczyk/sketches-from-sacramento/sketches-from-sacramento-front.jpg",
     },
     {
       name: "Need Not",
@@ -66,7 +71,7 @@ const STRANGE_FRONTIERS: IArtist = {
       links: [
         {
           iconId: IconId.Bandcamp,
-          href: "https://strangefrontiers.bandcamp.com/album/need-not",
+          href: "https://danbednarczyk.bandcamp.com/album/need-not",
         },
         // {
         //   iconId: IconId.Lyrics,
@@ -74,7 +79,7 @@ const STRANGE_FRONTIERS: IArtist = {
         // },
       ],
       artSrc:
-        "/img/art/album-covers/strange-frontiers/need-not/need-not-front.jpg",
+        "/img/art/album-covers/dan-bednarczyk/need-not/need-not-front.jpg",
     },
     {
       name: "Silent City",
@@ -94,11 +99,11 @@ const STRANGE_FRONTIERS: IArtist = {
       links: [
         {
           iconId: IconId.Bandcamp,
-          href: "https://strangefrontiers.bandcamp.com/album/silent-city",
+          href: "https://danbednarczyk.bandcamp.com/album/silent-city",
         },
         // {
         //   iconId: IconId.SoundCloud,
-        //   href: "https://soundcloud.com/strangefrontiers/sets/silent-city",
+        //   href: "https://soundcloud.com/danbednarczyk/sets/silent-city",
         // },
         // {
         //   iconId: IconId.YouTube,
@@ -107,12 +112,12 @@ const STRANGE_FRONTIERS: IArtist = {
         // { iconId: IconId.Lyrics, href: "" },
       ],
       artSrc:
-        "/img/art/album-covers/strange-frontiers/silent-city/silent-city-front.jpg",
+        "/img/art/album-covers/dan-bednarczyk/silent-city/silent-city-front.jpg",
     },
   ],
 };
 
-const JONAH: IArtist =  {
+const JONAH: IArtist = {
   name: "Jonah!",
   description: "Grungy slacker rock",
   thumnbnailPath: "/img/temp/jonah.jpg",
@@ -134,11 +139,10 @@ const JONAH: IArtist =  {
           href: "https://jonahmakesmusic.bandcamp.com/album/crooked-spine",
         },
       ],
-      artSrc:
-        "/img/temp/crooked_spine.jpg",
-    }
+      artSrc: "/img/temp/crooked_spine.jpg",
+    },
   ],
-}
+};
 
 const THE_VECTORS: IArtist = {
   name: "The Vectors",
@@ -240,7 +244,8 @@ const THE_VECTORS: IArtist = {
 const OLD_PROJECTS: IArtist = {
   name: "Old Projects",
   description: "Misc projects from my early years",
-  thumnbnailPath: "/img/art/album-covers/old-projects/human-architecture/human-architecture-front-alt.jpg",
+  thumnbnailPath:
+    "/img/art/album-covers/old-projects/human-architecture/human-architecture-front-alt.jpg",
   links: [],
   albums: [
     {
@@ -265,7 +270,7 @@ const OLD_PROJECTS: IArtist = {
       links: [
         {
           iconId: IconId.SoundCloud,
-          href: "https://soundcloud.com/strangefrontiers/sets/human-architecture",
+          href: "https://soundcloud.com/danbednarczyk/sets/human-architecture",
         },
         {
           iconId: IconId.YouTube,
@@ -316,13 +321,13 @@ const OLD_PROJECTS: IArtist = {
         "/img/art/album-covers/old-projects/out-of-reach/out-of-reach-front.jpg",
     },
   ],
-}
+};
 
 const MUSIC_DATA: IArtist[] = [
-  STRANGE_FRONTIERS,
+  DAN_BEDNARCZYK,
   JONAH,
   THE_VECTORS,
-  OLD_PROJECTS
+  OLD_PROJECTS,
 ];
 
 export default MUSIC_DATA;

@@ -39,9 +39,7 @@ const Row: React.FC<{
             href={linkHref}
             className="flex items-center justify-center py-2 px-4 mt-4 rounded-lg focus:shadow-outline theme-bg-link"
           >
-            <span className="text-lg">
-              {linkText}
-            </span>
+            <span className="text-lg">{linkText}</span>
             <Icon iconId={IconId.NavRight} className="h-3 w-3 ml-2" />
           </Link>
         </div>
@@ -83,13 +81,13 @@ const DATA = {
       imgSrc: studioHeadshot,
       text: (
         <>
-          As a creative artist, I collect my various projects under the name{" "}
-          <strong>Strange Frontiers</strong>. I am a multi-disciplinary musician,
-          including work in songwriting, audio engineering, mixing, performance,
-          and education. As a visual artist, I have applied my graphic design
-          skills to dozens of projects for album covers, posters, websites,
-          logos, t-shirts, and tattoos. I also work with physical media and I
-          have an extensive portfolio spanning many different formats.
+          I am a multi-disciplinary musician, including work in songwriting,
+          audio engineering, mixing, performance, and education. As a visual
+          artist, I have applied my graphic design skills to dozens of projects
+          for album covers, posters, websites, logos, t-shirts, and tattoos. I
+          also work with physical media and I have an extensive portfolio
+          spanning many different formats. Occasionally, I perform under the
+          name "Strange Frontiers"
         </>
       ),
     },
