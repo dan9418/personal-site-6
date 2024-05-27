@@ -34,7 +34,7 @@ const DAN_BEDNARCZYK: IArtist = {
     // },
     {
       iconId: IconId.YouTube,
-      href: "https://www.youtube.com/channel/UCyq0-Fr2jM-GrbTB-SKOSkA",
+      href: "https://www.youtube.com/@dan.bednarczyk",
     },
   ],
   albums: [
@@ -53,7 +53,7 @@ const DAN_BEDNARCZYK: IArtist = {
       links: [
         {
           iconId: IconId.Bandcamp,
-          href: "https://dan.bednarczyk.bandcamp.com/album/sketches-from-sacramento",
+          href: "https://danbednarczyk.bandcamp.com/album/sketches-from-sacramento",
         },
       ],
       artSrc:
@@ -69,6 +69,14 @@ const DAN_BEDNARCZYK: IArtist = {
         { name: "Small World" },
       ],
       links: [
+        {
+          iconId: IconId.Spotify,
+          href: "https://open.spotify.com/album/7KsbPTh2cD9NbFC3gVknOL?si=jxyFrJ3qSB6TSVIN9DfWRA",
+        },
+        {
+          iconId: IconId.Music,
+          href: "https://music.apple.com/us/album/need-not-ep/1615109361",
+        },
         {
           iconId: IconId.Bandcamp,
           href: "https://danbednarczyk.bandcamp.com/album/need-not",
@@ -98,6 +106,14 @@ const DAN_BEDNARCZYK: IArtist = {
       ],
       links: [
         {
+          iconId: IconId.Spotify,
+          href: "https://open.spotify.com/album/7s6ButedifP4Vq3dnN1UmF?si=eb0G2Au-Q0qfFBU6q01lPQ",
+        },
+        {
+          iconId: IconId.Music,
+          href: "https://music.apple.com/us/album/silent-city/1628196809",
+        },
+        {
           iconId: IconId.Bandcamp,
           href: "https://danbednarczyk.bandcamp.com/album/silent-city",
         },
@@ -121,7 +137,24 @@ const JONAH: IArtist = {
   name: "Jonah!",
   description: "Grungy slacker rock",
   thumnbnailPath: "/img/temp/jonah.jpg",
-  links: [],
+  links: [
+    {
+      iconId: IconId.Spotify,
+      href: "https://open.spotify.com/artist/3ZbSgXEfKaAstGgsa7pQKr?si=39AsFySXSSCg1UfJEJW_rQ",
+    },
+    {
+      iconId: IconId.Music,
+      href: "https://music.apple.com/us/artist/jonah/1690975960",
+    },
+    {
+      iconId: IconId.Bandcamp,
+      href: "https://jonahmakesmusic.bandcamp.com/",
+    },
+    {
+      iconId: IconId.Instagram,
+      href: "https://www.instagram.com/jonah_makesmusic/",
+    },
+  ],
   albums: [
     {
       name: "Crooked Spine",
@@ -134,6 +167,14 @@ const JONAH: IArtist = {
         { name: "Rules Like Dogs" },
       ],
       links: [
+        {
+          iconId: IconId.Spotify,
+          href: "https://open.spotify.com/album/0GVBwavRQ0w9loTrVlajbw?si=cK2f6ldCTfGB--DqwpusIQ",
+        },
+        {
+          iconId: IconId.Music,
+          href: "https://music.apple.com/us/album/crooked-spine-ep/1738724560",
+        },
         {
           iconId: IconId.Bandcamp,
           href: "https://jonahmakesmusic.bandcamp.com/album/crooked-spine",

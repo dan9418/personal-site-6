@@ -43,7 +43,8 @@ export const LINK_BANDCAMP: ILink = {
 export const LINK_SPOTIFY: ILink = {
   text: "Spotify",
   caption: "Dan Bednarczyk",
-  href: "https://open.spotify.com/artist/3PMMGV0yEGktq0tGQ7lO0r?si=RzMrSZoRQK2htXfe-fTs5Q",
+  //href: "https://open.spotify.com/artist/3PMMGV0yEGktq0tGQ7lO0r?si=RzMrSZoRQK2htXfe-fTs5Q", // strange frontiers
+  href: "https://open.spotify.com/artist/37bMMmv82uI3xhb0S8hL9V?si=F7tzXuHXQqmqRccHhoSKQg",
   iconId: IconId.Spotify,
 };
 

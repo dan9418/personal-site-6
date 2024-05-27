@@ -86,8 +86,7 @@ const DATA = {
           artist, I have applied my graphic design skills to dozens of projects
           for album covers, posters, websites, logos, t-shirts, and tattoos. I
           also work with physical media and I have an extensive portfolio
-          spanning many different formats. Occasionally, I perform under the
-          name &quot;Strange Frontiers&quot;
+          spanning many different formats.
         </>
       ),
     },
