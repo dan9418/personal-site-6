@@ -80,7 +80,7 @@ export type WorkExpItem = {
 
 const WORK_EXP: WorkExpItem[] = [
   {
-    company: "CBS Sports, MaxPreps",
+    company: "PlayOn Sports, MaxPreps",
     duration: "December 2019 - Present",
     position: "Senior Software Engineer",
     location: "El Dorado Hills, CA (Remote)",

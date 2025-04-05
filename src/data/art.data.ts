@@ -89,7 +89,7 @@ const ALBUMS: IGallery = {
 
 const SNAPCHAT: IGallery = {
   name: "Snapchat Filters",
-  description: "Some Snapchat geofilters",
+  description: "Snapchat geofilters",
   thumnbnailPath: "/img/art/snapchat-filters/chesterfield.png",
   images: [
     // 4
@@ -221,7 +221,7 @@ const JUST_FOR_FUN: IGallery = {
 
 const SHIRTS: IGallery = {
   name: "T-Shirts",
-  description: "Some shirts I designed in college",
+  description: "Shirts I designed in college",
   thumnbnailPath: "/img/art/t-shirts/the-panther-pitt.jpg",
   images: [
     // 5

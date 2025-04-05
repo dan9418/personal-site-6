@@ -9,7 +9,7 @@ import {
 
 const DAN_BEDNARCZYK: IArtist = {
   name: "Dan Bednarczyk",
-  description: "Solo work",
+  description: "Various solo projects. New EP coming out summer 2025.",
   thumnbnailPath: "/img/photography/headshots/studio-square.jpg",
   links: [
     {
@@ -135,7 +135,7 @@ const DAN_BEDNARCZYK: IArtist = {
 
 const JONAH: IArtist = {
   name: "Jonah!",
-  description: "Grungy slacker rock",
+  description: "Grungy slacker rock. New album 'Dynamite Nonstick' coming out 5/30/25!",
   thumnbnailPath: "/img/temp/jonah.jpg",
   links: [
     {

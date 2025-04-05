@@ -50,7 +50,7 @@ const Row: React.FC<{
 
 const DATA = {
   header: "Hi, I'm Dan Bednarczyk",
-  subheader: "Engineer | Designer | Artist",
+  subheader: "Engineer | Musician | Artist",
   location: "Pittsburgh, PA",
   rows: [
     {
@@ -60,17 +60,11 @@ const DATA = {
       imgSrc: professionalHeadshot,
       text: (
         <>
-          I have{" "}
-          <strong>
-            over 8 years of professional software engineering experience
-          </strong>{" "}
-          delivering first-class solutions to some of the largest technology
-          companies in the country. Currently, at MaxPreps, I lead the web
-          frontend of a site that handles over{" "}
-          <strong>30 million page views a day</strong> from a large variety of
-          users and devices. My experience includes integrations for ads,
-          tracking, SEO optimization, device responsivity, edge-caching,
-          accessibility, and URL-rewriting schemes.
+          I have over 8 years of professional software engineering experience. 
+          Currently, at MaxPreps, I lead the web frontend of a site that handles 
+          millions of page views from a large variety of users and devices. 
+          My experience includes integrations for ads, tracking, SEO optimization, 
+          device responsivity, edge-caching, accessibility, and URL-rewriting schemes.
         </>
       ),
     },
