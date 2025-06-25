@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
       {!isContactPage && <LinkCategoriesList x isDark />}
       <address className="text-xs pt-8 flex flex-col justify-center items-center">
         <p>Dan Bednarczyk</p>
-        <p>4/5/24</p>
-        <p>v0.1.5</p>
+        <p>6/25/25</p>
+        <p>v0.1.6</p>
       </address>
     </footer>
   );

@@ -71,7 +71,7 @@ const DAN_BEDNARCZYK: IArtist = {
       links: [
         {
           iconId: IconId.Spotify,
-          href: "https://open.spotify.com/album/7KsbPTh2cD9NbFC3gVknOL?si=jxyFrJ3qSB6TSVIN9DfWRA",
+          href: "https://open.spotify.com/album/7KsbPTh2cD9NbFC3gVknOL",
         },
         {
           iconId: IconId.Music,
@@ -107,7 +107,7 @@ const DAN_BEDNARCZYK: IArtist = {
       links: [
         {
           iconId: IconId.Spotify,
-          href: "https://open.spotify.com/album/7s6ButedifP4Vq3dnN1UmF?si=eb0G2Au-Q0qfFBU6q01lPQ",
+          href: "https://open.spotify.com/album/7s6ButedifP4Vq3dnN1UmF",
         },
         {
           iconId: IconId.Music,
@@ -140,7 +140,7 @@ const JONAH: IArtist = {
   links: [
     {
       iconId: IconId.Spotify,
-      href: "https://open.spotify.com/artist/3ZbSgXEfKaAstGgsa7pQKr?si=39AsFySXSSCg1UfJEJW_rQ",
+      href: "https://open.spotify.com/artist/3ZbSgXEfKaAstGgsa7pQKr",
     },
     {
       iconId: IconId.Music,
@@ -157,6 +157,40 @@ const JONAH: IArtist = {
   ],
   albums: [
     {
+      name: "Dynamite Nonstick",
+      releaseDate: "5/30/2025",
+      tracks: [
+        { name: "Rue Morgue (feat. eden)" },
+        { name: "175" },
+        { name: "Saw You (In Half)" },
+        { name: "Turtleneck" },
+        { name: "D.A.M." },
+        { name: "No Enemy" },
+        { name: "Fly Around (feat. faust)" },
+        { name: "Reno" },
+        { name: "New Things" },
+        { name: "Starlight" },
+        { name: "Front Porch" },
+        { name: "Nimrod" },
+        { name: "On A Whim (feat. eden)" },
+      ],
+      links: [
+        {
+          iconId: IconId.Spotify,
+          href: "https://open.spotify.com/album/53xq4Ix2OMP1stgt3kUQQh",
+        },
+        {
+          iconId: IconId.Music,
+          href: "https://music.apple.com/us/album/dynamite-nonstick/1817583166",
+        },
+        {
+          iconId: IconId.Bandcamp,
+          href: "https://jonahmakesmusic.bandcamp.com/album/dynamite-nonstick",
+        },
+      ],
+      artSrc: "/img/temp/dynamite_nonstick.jpg",
+    },
+    {
       name: "Crooked Spine",
       releaseDate: "3/29/24",
       tracks: [
@@ -169,7 +203,7 @@ const JONAH: IArtist = {
       links: [
         {
           iconId: IconId.Spotify,
-          href: "https://open.spotify.com/album/0GVBwavRQ0w9loTrVlajbw?si=cK2f6ldCTfGB--DqwpusIQ",
+          href: "https://open.spotify.com/album/0GVBwavRQ0w9loTrVlajbw",
         },
         {
           iconId: IconId.Music,
